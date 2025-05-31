@@ -1,0 +1,208 @@
+[
+  {
+    "title": "Mold Skill",
+    "id": 1,
+    "img1": "proja1.png",
+    "img2": "proja2.png",
+    "img3": "proja3.png",
+    "description": "I was first introduced to HTML back in 11th grade — and I was instantly hooked. It felt like I'd unlocked a new superpower. I remember how exciting it was to work with <table> and <form> elements, and to create my very own style.css. I felt like a tech nerd — like I was stepping into the world of real developers. I even started dreaming of becoming the next Mark Zuckerberg.\n\nBut then, JavaScript entered the scene. When my teacher started teaching JS, everything changed. It wasn't that I lost interest, but I had a realization: this journey is going to be long and challenging. The \"Zuckerberg\" in me didn't die — he just grew up a little. I realized that success in tech takes patience, persistence, and a lot of practice. And Mold Skill is the result of that practice — my proudest project. \n\n It all started with just HTML and CSS, but with time and effort, I built it into a full React + Vite application. Mold Skill wasn’t just a random idea; it was born from a genuine desire to build something useful — even for myself. \n\nIt’s an online learning platform that offers educational resources tailored for NEB students. From books and notes to practice questions sourced from various schools (including board exams), Mold Skill is designed to support and strengthen students’ learning. I've included a link to the first version of the site below — take a look at the code and you'll see just how obsessed I am with this project.",
+    "link1": ["https://msmahato.com.np", "https://github.com/MSK1116/Mold-Skill-1"],
+    "type": "Platform"
+  },
+  {
+    "title": "Everest TechSo Network",
+    "id": 2,
+    "img1": "projb1.png",
+    "img2": "projb2.png",
+    "img3": "projb3.png",
+    "description": "We are delighted to share the success of our recent program at Golden Future english boarding School kishanpur, dhanusha . The students were invited to write about their aspirations and future plans, and we were thrilled to guide them through this process. Our aim was to inspire them to think big, providing them with valuable information about available competitions and scholarships to help them achieve their dreams.  Throughout the program, we were not only mentors but also learners. The insights and fresh perspectives shared by the students enriched our experience profoundly. We extend our deepest gratitude to the founder (Lokchandra yadav) and the students for their exemplary discipline, strong values, and focused dedication. Their warm hospitality and enthusiastic engagement made our visit truly special. We are excited about future collaborations and wish them a bright and successful future.",
+    "link1": [""],
+    "type": "Organization"
+  },
+  {
+    "title": "Think Big",
+    "id": 3,
+    "img1": "projc1.png",
+    "img2": "projc2.png",
+    "img3": "projc3.png",
+    "description": "Being a proud co-founder, let me introduce you to Think Big Org.\n\nIt all started with the motive of \"Ending Exploitation, Ensuring Education.\" We are dedicated to raising awareness, ending child marriage and labor, and ensuring every child has the opportunity to grow, learn, and thrive in a safe environment.\n\nWe currently focus on the Terai region and inside Kathmandu Valley. We are working to provide scholarships, school-level clubs, and seminars on health, rights, and the environment. Please go through the link below.\n\nLet's come to the main point of \"website\" 🐝\n\nPicture this: a fluttering bee 🐝 welcoming visitors on the homepage, with hidden Easter eggs 🥚 scattered throughout the website. Why? Because this website serves an NGO fighting child exploitation, particularly child marriage and child labor in Nepal.\n\nI knew exactly who would be visiting—people carrying heavy stories. So, I wanted to create something pleasant and calming for them.\n\nEvery detail is crafted with purpose—from floating 📚 books in the background to blooming pulp animations 🌿. While keeping the UI clean and clear, I aimed to create a gentle, welcoming space.",
+    "link1": ["https://thinkbig.org.np", "https://github.com/MSK1116/Think-Big"],
+    "type": "Organization"
+  },
+  {
+    "title": "Gamvir Samudra Setu SS, Lalitpur",
+    "id": 4,
+    "img1": "projd1.png",
+    "img2": "projd2.png",
+    "img3": "projd3.png",
+    "description": "The affordable education of GSS was a key to my sustain in the Kathmandu Valley, and this website is a gift to my school for that.\n\nMade with Next.js, this website is a beast at both SEO and performance. A website that speaks for the school—helping students, teachers, and school staff share important updates and information seamlessly.\n\nStudents can apply, contact, and get information about the application and scholarship.",
+    "link1": ["https://gamvirss.edu.np"],
+    "type": "Gov School"
+  },
+
+  {
+    "title": "Agrowtik",
+    "id": 5,
+    "img1": "projf1.png",
+    "img2": "projf2.png",
+    "img3": "projf3.png",
+    "description": "Agrowtik is a project designed to reduce agricultural crop wastage by providing farmers and collaborating organizations with effective tools and insights.\n\nThe project includes a web application that helps farmers sell their crops while staying informed about policies, market demand, supply trends, and data analysis. This platform creates a direct connection between farmers and merchants, making it easier for them to buy and sell crops seamlessly.\n\nIn addition, Agrowtik incorporates an AI-based demand prediction model built using NASA’s geospatial data. This model helps forecast crop demand and can be integrated into IoT systems or other advanced networks, improving the efficiency of the agricultural supply chain.\n\nBy addressing challenges in crop wastage and market accessibility, Agrowtik offers a practical solution to enhance the productivity and sustainability of the farming industry.\n\nFor more details, visit the live site from the link below and refer to the Git repository for insights into the model and data analysis.\n\nIn future versions, Agrowtik aims to expand its features to support farmers at every stage, from sowing seeds to selling their produce in the market. The goal is to utilize NASA's spatial data to generate personalized, localized prompts for farmers in their native languages. These prompts will guide them on optimal planting and harvesting times to maximize yield.\n\nAnother planned feature is weather forecasting, which will help farmers predict conditions such as sun-drying time for crops during the rainy season. This will enable them to avoid losses caused by unexpected weather.\n\nAdditionally, the system will include rainfall forecasting to help farmers optimize water usage, adjust irrigation practices, and conserve groundwater.\n\nFuture updates also aim to enhance market insights by providing real-time data on crop demand. This will allow farmers to monitor market trends and make informed decisions about which crops to prioritize for the upcoming season, optimizing profits and reducing waste.\n\nThese enhancements reflect Agrowtik's vision of offering farmers worldwide an accessible, data-driven solution to improve crop production, resource management, and market success.",
+    "link1": ["https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/agrowtik/", "https://agrowtik-front.vercel.app/", "https://github.com/MSK1116/Agrowtik-original.git"],
+    "type": "Project"
+  },
+  {
+    "title": "AgroTech",
+    "id": 6,
+    "img1": "projg1.png",
+    "img2": "projg2.png",
+    "img3": "projg3.png",
+    "description": "My First Science Project Exhibition Experience\n\nParticipating in my first-ever science project exhibition was a truly insightful experience. I had never presented my ideas to such a large audience before, and sharing them publicly was both exciting and nerve-wracking.\n\nAs for the project itself, it was inspired by a particularly difficult year for apple farmers in Nepal. That year saw a massive wastage of apples, which motivated me and my teammate to develop a solution. We presented our idea at MechTrix 2079 BS.\n\nOur project, Agrotech, aimed to improve the efficiency of labor-intensive fruit sorting. Using sensors and an Arduino, we demonstrated a system that could categorize apples into three types: ripe, suitable for secondary use, and rotten. This is a task that is tedious and error-prone when done manually. Additionally, our prototype showcased a method to sanitize apples during the sorting process.\n\nFun Trivia:\nSince the exhibition was organized by SOMES-Pulchowk, we added an over-the-top syringe hydraulic system😉😜—just to show that we had built something straight out of a physics book!",
+    "link1": ["https://youtu.be/NiHjZ0wWVu0", "https://github.com/MSK1116/MechTrix.git"],
+    "type": "Prototype"
+  },
+  {
+    "title": "LCS-Ventilator",
+    "id": 7,
+    "img1": "projh1.png",
+    "img2": "projh2.png",
+    "img3": "projh3.png",
+    "description": "An Award-Winning Project: LCSV\n\nLCSV is one of the proudest projects I’ve had the opportunity to lead. The original idea was proposed by one of my high school juniors, and together we developed it into a functional prototype. The project earned the Runner-Up (2nd Place) Award at EEPEX-2024, hosted by Kathmandu University—where it stood out even among entries from bachelor-level students.\n\nBorn out of the fear and urgency of the COVID-19 crisis, LCSV (Low-Cost Smart Ventilator) addresses the critical shortage of ventilators that became evident during the pandemic. Designed with affordability and simplicity in mind, the device utilizes smart sensor technology, an Arduino Nano, and an ESP32 to regulate the compression of an Ambu bag—ensuring a steady and controlled airflow to patients.\n\nWhat makes LCSV truly impactful is its accessibility. With an intuitive interface, it can be operated by individuals without any medical background—even children in emergency situations.",
+    "link1": ["https://www.facebook.com/share/p/1AhEY7uLfP/"],
+    "type": "Prototype"
+  },
+  {
+    "title": "Studio",
+    "id": 8,
+    "img1": "proji1.png",
+    "img2": "proji2.png",
+    "img3": "proji3.png",
+    "description": "Studio is a gallery that reflects my love for the environment.\n\nIt holds the moments I’ve wished to freeze in time—an archive of my photography, capturing everything from tiny insects to towering mountains. Each photo is a piece of my journey, a way of documenting the world as I see it.\n\nAnd I do it purely for the joy it brings me.",
+    "link1": ["https://studio.manishmahato.info.np/"],
+    "type": "Website"
+  },
+  {
+    "title": "Guru Parbandahn",
+    "id": 10,
+    "img1": "proje1.png",
+    "img2": "proje2.png",
+    "img3": "proje3.png",
+    "description": "This C program, Guru Prabandhan, is a comprehensive teacher management system that streamlines the process of handling teacher data. It enables users to input and store essential details like teacher ID, name, salary, and subject, with the data being saved to a file for future retrieval. The system offers functionalities such as displaying a sorted list of teachers, searching for specific teachers by their ID, and generating detailed reports on salary expenditures, highlighting the highest and lowest salaries. Additionally, it allows users to reset the entire database, wiping all stored information when necessary, and includes a feature to change the system password for enhanced security. The program is interactive, featuring user-friendly prompts, a loading screen, and safeguards against unauthorized access. It's a practical tool for efficiently managing teacher information in educational institutions.",
+    "link1": ["https://github.com/MSK1116/guru.git"],
+    "type": "C Program"
+  },
+
+  {
+    "title": "Nanglo",
+    "id": 9,
+    "img1": "projj1.gif",
+    "img2": "projj2.gif",
+    "img3": "projj3.png",
+    "description": "Nanglo is a new and creative idea, initially developed for the PLEASE Hack initiative organized by The World Bank and SACEP. The project focuses on reducing plastic pollution by promoting plastic-free alternatives and supporting sustainable livelihoods.\n\nAt its core, Nanglo connects local makers of eco-friendly products—such as potters, ceramicists, and artisans—with consumers through a simple and inclusive digital platform. It can be integrated directly into existing e-commerce platforms to recommend plastic-free alternatives whenever a user browses plastic-based items.\n\nNanglo also leverages AI technology to let users scan plastic products using their phone cameras. The app will provide information on environmental impact—such as carbon footprint and decomposition time—and recommend sustainable alternatives. Users can exchange their plastic waste for virtual rewards, which can be used to purchase eco-friendly items.\n\nBeyond technology, Nanglo aims to empower women and marginalized communities by giving them fair market access and economic opportunities in the growing green economy. Through this, Nanglo not only fights pollution but also supports local crafts, inclusivity, and long-term behavioral change.\n\n⚠️❗Please go through the PDF of original project proposal for a better understanding of the idea.",
+    "link1": [
+      "https://www.manishmahato.info.np/technical_proposal_pleasehack_2025.pdf",
+      "https://github.com/MSK1116/Nanglo.git",
+      "https://www.linkedin.com/posts/manu0519_pleasehack2024-sustainability-innovation-activity-7311941750414036992-OvVX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAExr5WwBkt09tBJgudOTYQa1e1pq9ZLAfdk"
+    ],
+    "type": "Project"
+  },
+  {
+    "title": "",
+    "id": 11,
+    "img1": "projk1.png",
+    "img2": "projk2.png",
+    "img3": "projk3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 12,
+    "img1": "projl1.png",
+    "img2": "projl2.png",
+    "img3": "projl3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 13,
+    "img1": "projm1.png",
+    "img2": "projm2.png",
+    "img3": "projm3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 14,
+    "img1": "projn1.png",
+    "img2": "projn2.png",
+    "img3": "projn3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 15,
+    "img1": "projo1.png",
+    "img2": "projo2.png",
+    "img3": "projo3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 16,
+    "img1": "projp1.png",
+    "img2": "projp2.png",
+    "img3": "projp3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 17,
+    "img1": "projq1.png",
+    "img2": "projq2.png",
+    "img3": "projq3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 18,
+    "img1": "projr1.png",
+    "img2": "projr2.png",
+    "img3": "projr3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 19,
+    "img1": "projs1.png",
+    "img2": "projs2.png",
+    "img3": "projs3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  },
+  {
+    "title": "",
+    "id": 20,
+    "img1": "projt1.png",
+    "img2": "projt2.png",
+    "img3": "projt3.png",
+    "description": "",
+    "link1": [""],
+    "type": ""
+  }
+]

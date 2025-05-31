@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  background-color: white;
+  font-family: var(--font-radio-canada-big), sans-serif;
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  --animate-meteor-effect: meteor 5s linear infinite;
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(180deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(180deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
+}
+
+.modal-right {
+  justify-items: end;
+  :where(.modal-box) {
+    height: 95vh;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 16px;
+  }
+}
+
+@keyframes slide-bounce {
+  0%,
+  100% {
+    transform: translateX(0); /* Start and end at the original position */
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1); /* Easing for smooth end */
+  }
+  50% {
+    transform: translateX(25%); /* Slide 25% to the right at the midpoint */
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1); /* Easing for smooth return */
+  }
+}
+
+/* Apply the animation */
+.animate-slide-bounce {
+  animation: slide-bounce 3s infinite; /* Infinite loop with 1-second duration */
+}

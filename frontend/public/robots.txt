@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.manishmahato.info.np
+
+# Sitemaps
+Sitemap: https://www.manishmahato.info.np/sitemap.xml

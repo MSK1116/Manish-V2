@@ -1,0 +1,191 @@
+[
+  {
+    "id": "1",
+    "title": "Whispers of the Hills",
+    "description": "The cityscape stretches out like a living organism, pulsating with life, seen from a lofty perch that embraces the horizon.",
+    "location": "Chandragiri, Nepal",
+    "link": "IMG_5547.jpg",
+    "link_low": "IMG_5547-min.jpg",
+    "type": "both"
+  },
+  {
+    "id": "2",
+    "title": "Green Window",
+    "description": "Branches intertwined, like our supportive connections, filtering life's light through hope and resilience.",
+    "location": "Lahan, Nepal",
+    "link": "IMG_6191.jpg",
+    "link_low": "IMG_6191-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "3",
+    "title": "Garcefully",
+    "description": " A butterfly perches gracefully on a bright yellow flower, framed by a sea of green, a dance of color in nature's garden.",
+    "location": "Kathmandu, Nepal",
+    "link": "IMG_0779.jpg",
+    "link_low": "IMG_0779-min.jpg",
+    "type": "both"
+  },
+  {
+    "id": "4",
+    "title": "Urban Resilience",
+    "description": "Amid the concrete jungle, a pigeon symbolizes resilience, thriving in the heart of the city.",
+    "location": "Lahan, Nepal",
+    "link": "IMG_6269.jpg",
+    "link_low": "IMG_6269-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "12",
+    "title": "Chhath",
+    "description": "Grace and Grandeur: The Gentle Giant in Festive Glory",
+    "location": "Murtiya, Nepal",
+    "link": "IMG_6980.jpg",
+    "link_low": "IMG_6980-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "5",
+    "title": "Cultural Harmony",
+    "description": "In the ritual of life, we offer kindness and tradition, like a plate of vibrant offerings, symbolizing the beauty of cultural connection",
+    "location": "Bardiya, Nepal",
+    "link": "IMG_8146.jpg",
+    "link_low": "IMG_8146-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "6",
+    "title": "Blossom of Resilience",
+    "description": "Like a rose thriving in chaos, our resilience blossoms, shining through life's uncertainties.",
+    "location": "Hajrbigha, Nepal",
+    "link": "IMG_6782.jpg",
+    "link_low": "IMG_6782-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "8",
+    "title": "Flutter of Resilience",
+    "description": "Amid life's trials, a tattered butterfly finds refuge on a vibrant marigold, symbolizing resilience and the ability to thrive despite hardship.",
+    "location": "Murtiya, Nepal",
+    "link": "IMG_6805.jpg",
+    "link_low": "IMG_6805-min.jpg",
+    "type": "both"
+  },
+  {
+    "id": "9",
+    "title": "Wings of Freedom",
+    "description": "Like a pigeon taking flight amidst its flock, resilience lifts us above life's challenges, inspiring us to soar even in the most uncertain times",
+    "location": "Murtiya, Nepal",
+    "link": "IMG_6848.jpg",
+    "link_low": "IMG_6848-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "10",
+    "title": "Sacred Serenity",
+    "description": "Like the sacred river flowing past a shrine of Lord Shiva, our resilience and peace are constantly renewed by faith and tradition, nourishing our spirits as we navigate life's journey.",
+    "location": "Barahathawa, Nepal",
+    "link": "IMG_0281.jpg",
+    "link_low": "IMG_0281-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "11",
+    "title": "Nature's Symphony",
+    "description": "Like the sacred river flowing past a shrine of Lord Shiva, our resilience and peace are constantly renewed by faith and tradition, nourishing our spirits as we navigate life's journey.",
+    "location": "Murtiya, Nepal",
+    "link": "IMG_0701.jpg",
+    "link_low": "IMG_0701-min.jpg",
+    "type": "both"
+  },
+  {
+    "id": "13",
+    "title": "Peaceful Perch",
+    "description": "A butterfly rests on a vibrant orange flower, capturing a serene and beautiful moment in nature.",
+    "location": "Murtiya, Nepal",
+    "link": "IMG_0937.jpg",
+    "link_low": "IMG_0937-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "7",
+    "title": "Radiant Serenity",
+    "description": "In this tranquil scene, vibrant purple flowers bask in the soft, warm light, their delicate petals creating a captivating contrast against the lush greenery. The gentle glow enhances the ethereal beauty, inviting a moment of peaceful reflection. 🌸",
+    "location": "Kishanpur, Nepal",
+    "link": "2.jpg",
+    "link_low": "2-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "14",
+    "title": "Clover's Embrace",
+    "description": "A patch of clover leaves, adorned with hues of green, yellow, and orange, forms a vibrant mosaic of nature's palette. Nestled among the leaves, tiny yellow flowers peek through, adding a touch of charm to this lush, textured scene. 🍀",
+    "location": "Kishanpur, Nepal",
+    "link": "3.jpg",
+    "link_low": "3-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "15",
+    "title": "Rustic Bounty",
+    "description": "In this close-up, a cluster of small, round, red-orange fruits with green patches are beautifully highlighted against a softly blurred green background. The intricate texture and vibrant colors of the fruits create a captivating display of nature's rustic charm. 🍃",
+    "location": "Kishanpur, Nepal",
+    "link": "4.jpg",
+    "link_low": "4-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "16",
+    "title": "Festival Canopy ",
+    "description": "Under a radiant sunburst of red, yellow, and orange fabric strips, white paper lanterns sway gently, creating a festive atmosphere against the clear blue sky. The intricate arrangement and vibrant colors of the canopy make for a visually striking and celebratory scene. 🌞🏮",
+    "location": "Janakpur, Nepal",
+    "link": "142951.jpg",
+    "link_low": "142951-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "18",
+    "title": "Blossoming Elegance",
+    "description": "A close-up reveals vibrant red and pink flowers with fuzzy, elongated petals standing out against a softly blurred green backdrop. The intricate veins of the green leaves and the vivid hues of the blossoms create a stunning visual contrast, capturing the delicate beauty and complexity of nature. 🌺",
+    "location": "Lahan, Nepal",
+    "link": "IMG_7243.jpg",
+    "link_low": "IMG_7243-min.jpg",
+    "type": "card"
+  },
+  {
+    "id": "19",
+    "title": "Tropical Allure",
+    "description": "In this vibrant close-up, magenta flowers with densely packed, elongated petals stand out against a blurred green backdrop, highlighted by the broad leaves with purple-tinged veins. The lush, tropical ambiance of the scene invites viewers to appreciate the intricate beauty and vivid colors of this stunning plant. 🌺",
+    "location": "Lahan, Nepal",
+    "link": "IMG_7246.jpg",
+    "link_low": "IMG_7246-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "20",
+    "title": "Cypress bloom",
+    "description": "Not a flower in the usual sense, but a quiet reminder that beauty thrives in its own unique brilliance, beyond tradition. 🌲✨",
+    "location": "Lahan, Nepal",
+    "link": "IMG_7655.jpg",
+    "link_low": "IMG_7655-min.jpg",
+    "type": "gallery"
+  },
+  {
+    "id": "21",
+    "title": "Kali Bani",
+    "description": "Beyond microphones and tambourines—this is worship, this is art, this is us. 🌲🎶",
+    "location": "Murtiya, Nepal",
+    "link": "IMG_8289.jpg",
+    "link_low": "IMG_8289-min.jpg",
+    "type": "both"
+  },
+  {
+    "id": "22",
+    "title": "Roar",
+    "description": "In the heart of shadow, truth blazes its own path. Evil may roar, but, it's the whisper of truth that always prevails. 🌲🔥",
+    "location": "Chandragiri, Nepal",
+    "link": "IMG_5442.jpg",
+    "link_low": "IMG_5442-min.jpg",
+    "type": "gallery"
+  }
+]
