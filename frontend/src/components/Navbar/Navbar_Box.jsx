@@ -76,11 +76,15 @@ const Navbar_Box = () => {
           Contact
         </Link>
       </li>
-      <li
-        onClick={() => navigate("/studio")}
-        className="relative after:content-[''] hover:scale-105 transition-all duration-300 cursor-pointer text-red-600 after:w-0 after:origin-left   hover:after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0">
-        {" "}
-        Studio
+      <li className="hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
+        <a
+          aria-label="Click to visit studio page"
+          href="https://studio.manishmahato.info.np"
+          target="_blank"
+          className="relative after:content-[''] after:w-0 after:origin-left   hover:after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0">
+          {" "}
+          Studio
+        </a>
       </li>
     </>
   );
@@ -101,8 +105,8 @@ const Navbar_Box = () => {
         </div>
         {/* mobile */}
         {menu && (
-          <div>
-            <ul className="md:hidden flex flex-col items-center justify-center  font-semibold text-xl  h-screen  gap-y-6">{navList}</ul>
+          <div data-aos-offset="-100" data-aos="fade-left" data-aos-duration="500" className={`md:hidden h-screen px-2 py-4 absolute right-0 bg-slate-50 z-50 ${sticky ? "bg-slate-200" : ""} transition-all duration-500 `}>
+            <ul className=" flex flex-col  md:font-semibold font-medium md:text-xl text-sm space-y-3">{navList}</ul>
           </div>
         )}
       </nav>

@@ -72,10 +72,10 @@ const Navbar_ProfilePic = () => {
           {flashImg && <div data-aos="zoom-in" className=" absolute h-full animate-pulse rounded-full  outline-2 shadow-lg outline-red-600  w-full"></div>}
           <Image alt="Manish photograph" className=" object-cover" fill={true} src={"/JPG_manish_circle.png"}></Image>
         </div>
-        <h6 className=" text-gray-900">
+        <div className=" text-gray-900">
           Manis<span className=" text-red-700">h</span>
           <p className="text-sm">Web Portfolio</p>
-        </h6>
+        </div>
 
         <div className={` absolute -top-4 -right-16 size-20 `}>
           {stickMan && <img data-aos="fade-down" className=" select-none object-contain " src="/clipart/strockManHi.gif"></img>}

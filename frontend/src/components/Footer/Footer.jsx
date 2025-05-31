@@ -27,23 +27,23 @@ const Footer = () => {
               </p>
               <ul className="md:mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
                 <li data-aos="fade-up" data-aos-offset="-50" data-aos-delay="200">
-                  <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://thinkbig.org.np/">
+                  <a aria-label="click to visit Think Big's website" target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://thinkbig.org.np/">
                     Think Big
                   </a>
                 </li>
 
                 <li data-aos="fade-up" data-aos-offset="-50" data-aos-delay="300">
-                  <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://www.msmahato.com.np">
+                  <a aria-label="Click to visit Mold Skill" target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://www.msmahato.com.np">
                     Mold Skill
                   </a>
                 </li>
                 <li data-aos="fade-up" data-aos-offset="-50" data-aos-delay="100">
-                  <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://gamvirss.edu.np/">
+                  <a aria-label="Click to visit website of GSS" target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://gamvirss.edu.np/">
                     Gamvir Samudra Setu School
                   </a>
                 </li>
                 <li data-aos="fade-up" data-aos-offset="-50" data-aos-delay="400">
-                  <a target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://studio.manishmahato.info.np">
+                  <a aria-label="Click to visit my Studio" target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://studio.manishmahato.info.np">
                     Studio
                   </a>
                 </li>
@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="flex flex-row  mt-10 space-x-3 justify-center md:justify-end ">
             <div className=" flex flex-col">
               <div className="text-sm flex  items-center space-x-1 lg:text-right">
-                <h6 className=""> Made with React, and Laptop💻</h6>
+                <p className=""> Made with Next.js, and Laptop💻</p>
               </div>
               <SystemInfo />
             </div>

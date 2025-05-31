@@ -14,9 +14,9 @@ const Award = () => {
       <section name="Award" className="relative my-20 md:pt-16 overflow-hidden max-w-screen-2xl w-full ">
         <div className="container mx-auto">
           <div className=" px-4 md:px-20">
-            <h1 data-aos="fade-down" className="text-3xl font-semibold text-red-600 capitalize lg:text-4xl ">
+            <h4 data-aos="fade-down" className="text-3xl font-semibold text-red-600 capitalize lg:text-4xl ">
               Awards & Participation
-            </h1>
+            </h4>
             <div className="mt-2">
               <span data-aos="fade-left" className="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
               <span data-aos="fade-left" data-aos-delay="100" className="inline-block w-3 h-1 ml-1 rounded-full bg-blue-500"></span>
@@ -33,12 +33,12 @@ const Award = () => {
                   <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block h-[95px] z-10 -top-[94px] ">
                     <polygon points="-30,95 583,95 583,65" className=" text-blue-700 fill-current "></polygon>
                   </svg>
-                  <h4 data-aos="zoom-in-up" data-aos-offset="-10" className="text-xl font-bold ">
+                  <h5 data-aos="zoom-in-up" data-aos-offset="-10" className="text-xl font-bold ">
                     Things that keeps me motivated
-                  </h4>
-                  <p data-aos="zoom-in-up" data-aos-offset="-10" data-aos-duration="1000" className="text-md font-light mt-2 ">
+                  </h5>
+                  <h6 data-aos="zoom-in-up" data-aos-offset="-10" data-aos-duration="1000" className="text-md font-light mt-2 ">
                     My academic journey has been punctuated by remarkable achievements and active participation in prestigious events that showcase my dedication to excellence. <span className=" text-red-600 font-semibold">Some of them are :</span>
-                  </p>
+                  </h6>
                 </blockquote>
                 <EasterEggProvider>
                   <Award_cat />
@@ -52,7 +52,7 @@ const Award = () => {
                   <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                     <GiPodiumSecond className="w-6 h-6" />
                   </div>
-                  <h6 className="text-xl mb-1 font-semibold"> EEPEX-24</h6>
+                  <h5 className="text-xl mb-1 font-semibold"> EEPEX-24</h5>
                   <p className="mb-4 text-left">
                     2<sup>nd</sup> position in Project Exhibition at EEPEX 24<br></br> Organized by SEEE , Kathmandu University
                   </p>
@@ -63,7 +63,7 @@ const Award = () => {
                     <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                       <FaHandsBubbles className="w-6 h-6" />
                     </div>
-                    <h6 className="text-xl mb-1 font-semibold"> MechTRIX- 2079 & 2080</h6>
+                    <h5 className="text-xl mb-1 font-semibold"> MechTRIX- 2079 & 2080</h5>
                     <p className="mb-4 ">Participated in MechTRIX-2079 & 2080 Organized by SOMAES, The Institute of Engineering (IOE), Pulchowk </p>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const Award = () => {
                     <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                       <SiNasa className="w-6 h-6" />
                     </div>
-                    <h6 className="text-xl mb-1 font-semibold">Space Apps Challenge</h6>
+                    <h5 className="text-xl mb-1 font-semibold">Space Apps Challenge</h5>
                     <p className="mb-4 ">People's Choice Awards-2024 for developing Agrowtik with aim to minimize global agricultural waste.</p>
                   </div>
                 </div>
@@ -81,7 +81,7 @@ const Award = () => {
                     <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
                       <FaMicrophoneAlt className="w-6 h-6" />
                     </div>
-                    <h6 className="text-xl mb-1 font-semibold">ISA</h6>
+                    <h5 className="text-xl mb-1 font-semibold">ISA</h5>
                     <p className="mb-4 "> Best Speaker of Speech Competition Organized by International School Award (ISA)</p>
                   </div>
                 </div>

@@ -9,7 +9,7 @@ const ProjectsCard = ({ items }) => {
       <input type="checkbox" id={items.id} className="modal-toggle" />
       <div className="modal place-items-end md:justify-items-end md:place-items-center " role="dialog">
         <div className=" modal-box rounded-r-none  md:h-[90vh] bg-gradient-to-tl from-gray-50 to-gray-100  overflow-visible relative md:w-1/3 h-1/2 w-full">
-          <h3 className="font-bold text-lg">{items.title}</h3>
+          <p className="font-bold text-lg">{items.title}</p>
           <div className="py-4 md:text-sm text-xs overflow-y-auto max-h-[80%]">
             {items.description.split("\n").map((line, index) => (
               <span key={index}>
@@ -33,7 +33,10 @@ const ProjectsCard = ({ items }) => {
             ))}
           </div>
           <div className="modal-action">
-            <label htmlFor={items.id} className="bg-gray-100 cursor-pointer rounded-l-full outline-none p-[0.6rem] w-11 h-[6.5rem] absolute md:-left-11 left-[44%] md:rotate-0 rotate-90 md:top-56 -top-16">
+            <label
+              aria-label="click to collapse to project viewer"
+              htmlFor={items.id}
+              className="bg-gray-100 cursor-pointer rounded-l-full outline-none p-[0.6rem] w-11 h-[6.5rem] absolute md:-left-11 left-[44%] md:rotate-0 rotate-90 md:top-56 -top-16">
               <FaArrowCircleRight className="animate-slide-bounce text-blue-500 w-full h-full" />
             </label>
           </div>
@@ -56,9 +59,9 @@ const ProjectsCard = ({ items }) => {
             <div className="p-3">
               <div className="flex flex-col cursor-default space-y-3 md:flex justify-between">
                 <div className="flex flex-row place-content-between">
-                  <h3 data-aos="fade-up" className="font-medium">
+                  <p data-aos="fade-up" className="font-medium">
                     {items.title}
-                  </h3>
+                  </p>
                   <span data-aos="fade-left" className="text-sm clamp text-gray-500">
                     {items.type}
                   </span>
@@ -74,44 +77,45 @@ const ProjectsCard = ({ items }) => {
         </div>
         <label htmlFor={items.id} className="modal-backdrop  md:bg-gray-900/60 bg-gray-900/80"></label>
       </div>
-
-      {/* Card */}
-      <label htmlFor={items.id} className="block cursor-pointer">
-        <div name={items.title} className="w-full p-6 mx-auto active:scale-95 transition-all duration-150 ">
-          <div data-aos="fade-up" data-aos-offset="50" className="shadow-md hover:shadow-xl rounded bg-white overflow-hidden cursor-pointer">
-            <div className="grid grid-cols-2 h-64">
-              <div className="h-64 relative border border-gray-100 overflow-hidden">
-                <Image fill={true} className="object-cover object-center  hover:rotate-1 hover:scale-105 transition-all duration-300" src={`/proj/${items.img1}`} alt={" first image of" + items.title}></Image>
+      {/* Card */}{" "}
+      <article>
+        <label htmlFor={items.id} className="block cursor-pointer">
+          <div name={items.title} className="w-full p-6 mx-auto active:scale-95 transition-all duration-150 ">
+            <div data-aos="fade-up" data-aos-offset="50" className="shadow-md hover:shadow-xl rounded bg-white overflow-hidden cursor-pointer">
+              <div className="grid grid-cols-2 h-64">
+                <div className="h-64 relative border border-gray-100 overflow-hidden">
+                  <Image fill={true} className="object-cover object-center  hover:rotate-1 hover:scale-105 transition-all duration-300" src={`/proj/${items.img1}`} alt={" first image of" + items.title}></Image>
+                </div>
+                <div className="h-64  border border-gray-100 overflow-hidden">
+                  <div className=" relative h-32 w-full">
+                    <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img2}`} alt={" second image of" + items.title} fill={true} />
+                  </div>
+                  <div className=" relative h-32 w-full">
+                    <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img3}`} alt={" third image of" + items.title} fill={true} />
+                  </div>
+                </div>
               </div>
-              <div className="h-64  border border-gray-100 overflow-hidden">
-                <div className=" relative h-32 w-full">
-                  <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img2}`} alt={" second image of" + items.title} fill={true} />
-                </div>
-                <div className=" relative h-32 w-full">
-                  <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img3}`} alt={" third image of" + items.title} fill={true} />
-                </div>
-              </div>
-            </div>
-            <div className="p-3">
-              <div className="flex flex-col cursor-pointer space-y-3 md:flex justify-between">
-                <div className="flex flex-row place-content-between">
-                  <h3 data-aos="fade-up" className="font-medium">
-                    {items.title}
-                  </h3>
-                  <span data-aos="fade-left" className="text-sm clamp text-gray-500">
-                    {items.type}
-                  </span>
-                </div>
-                <div>
-                  <span data-aos="fade-up" data-aos-delay="100" className="text-sm line-clamp-2 md:line-clamp-3 text-gray-500">
-                    {items.description}
-                  </span>
+              <div className="p-3">
+                <div className="flex flex-col cursor-pointer space-y-3 md:flex justify-between">
+                  <div className="flex flex-row place-content-between">
+                    <header data-aos="fade-up" className="font-medium">
+                      {items.title}
+                    </header>
+                    <h6 data-aos="fade-left" className="text-sm clamp text-gray-500">
+                      {items.type}
+                    </h6>
+                  </div>
+                  <div>
+                    <p data-aos="fade-up" data-aos-delay="100" className="text-sm line-clamp-2 md:line-clamp-3 text-gray-500">
+                      {items.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </label>
+        </label>
+      </article>
     </>
   );
 };

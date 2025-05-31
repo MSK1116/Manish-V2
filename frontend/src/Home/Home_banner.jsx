@@ -3,8 +3,8 @@ import Image from "next/image";
 import { FaLinkedin, FaNodeJs } from "react-icons/fa";
 import { FaSquareWhatsapp, FaSquareInstagram, FaFacebook } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
-import { SiMongodb, SiExpress } from "react-icons/si";
-
+import { SiMongodb, SiExpress, SiVite, SiTailwindcss } from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
 import { Meteors } from "@/components/Meteors";
 import { FlipWords } from "@/components/FlipWords";
 
@@ -13,17 +13,15 @@ const Home_banner = () => {
     <>
       <div data-aos-duration="700" id="Home" className="w-full overflow-hidden px-4 md:px-20 mt-20 md:h-screen h-full pb-3">
         <div className="flex relative  flex-col  md:flex-row">
-          <span className=" hidden md:block">
-            <Meteors />
-          </span>
+          <Meteors />
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
-            <h2 data-aos="fade-down" data-aos-duration="700" className="text-xl">
+            <h1 data-aos="fade-down" data-aos-duration="700" className="text-xl">
               Welcome to my small world!
-            </h2>
+            </h1>
             <div data-aos="fade-right" data-aos-offset="-20" data-aos-duration="700" className="flex gap-x-1 text-2xl  md:text-4xl">
-              <h1>
+              <h2>
                 Hello, i'm a <span className=" text-blue-800 font-bold">{<FlipWords words={["Student.", "Devloper.", "Social Activist.", "Photographer."]} />}</span>
-              </h1>
+              </h2>
             </div>
             <br />
             <h3 data-aos="zoom-in-up" data-aos-duration="700" data-aos-offset="-20" className="text-sm md:text-md text-justify">
@@ -34,9 +32,9 @@ const Home_banner = () => {
             {/* social media icon */}
             <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between">
               <div className=" gap-y-2 space-y-2 md:space-y-1 ">
-                <h1 data-aos="fade-right" data-aos-duration="700" className="font-bold md:text-left text-center">
+                <h4 data-aos="fade-right" data-aos-duration="700" className="font-bold md:text-left text-center">
                   Reach me on:
-                </h1>
+                </h4>
                 <ul className="flex space-x-5">
                   <li>
                     <a aria-label="click to visit my facebook account" target="blank" href="https://www.facebook.com/manu0519/">
@@ -61,21 +59,21 @@ const Home_banner = () => {
                 </ul>
               </div>
               <div className=" gap-y-2 space-y-2 md:space-y-1">
-                <h1 data-aos="fade-right" data-aos-duration="700" className="font-bold md:text-left text-center">
-                  Currelntly Involved:
-                </h1>
+                <h4 data-aos="fade-right" data-aos-duration="700" className="font-bold md:text-left text-center">
+                  Favorite tools:
+                </h4>
                 <ul className="flex space-x-5">
                   <li>
-                    <FaNodeJs data-aos="fade-right" data-aos-delay="300" className="text-2xl cursor-pointer hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
+                    <SiVite data-aos="fade-right" data-aos-delay="300" className="text-2xl  hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
                   </li>
                   <li>
-                    <IoLogoReact data-aos="fade-right" data-aos-delay="200" className="text-2xl cursor-pointer hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
+                    <RiNextjsLine data-aos="fade-right" data-aos-delay="200" className="text-2xl  hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
                   </li>
                   <li>
-                    <SiMongodb data-aos="fade-right" data-aos-delay="100" className="text-2xl cursor-pointer hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
+                    <IoLogoReact data-aos="fade-right" data-aos-delay="100" className="text-2xl  hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
                   </li>
                   <li>
-                    <SiExpress data-aos="fade-right" data-aos-delay="50" className="text-2xl cursor-pointer hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
+                    <SiTailwindcss data-aos="fade-right" data-aos-delay="50" className="text-2xl  hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
                   </li>
                 </ul>
               </div>
@@ -88,10 +86,8 @@ const Home_banner = () => {
           </div>
         </div>
       </div>
-
-      <span className="flex items-center">
+      <span data-aos="zoom-in" data-aos-duration="500" className="flex items-center">
         <span className="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></span>
-
         <span className="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></span>
       </span>
     </>

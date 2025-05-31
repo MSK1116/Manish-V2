@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Footer_scroll = () => {
   return (
     <>
-      <div className=" cursor-pointer absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+      <div aria-label="click to scroll to home" className=" cursor-pointer absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
         <Link to="Home" duration={900} offset={-70} activeClass="active" smooth={true}>
           <div data-aos="zoom-in-down" data-aos-duration="2000" className="inline-block rounded-full  bg-teal-600 hover:bg-red-600 transition-all duration-700 p-2 text-white shadow  sm:p-3 lg:p-4" href="#MainContent">
             <span className="sr-only">Back to top</span>

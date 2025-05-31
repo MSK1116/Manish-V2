@@ -72,10 +72,10 @@ export default function RootLayout({
     <html lang="en" data-theme="light">
       <head></head>
       <body className={`${radioCanadaBig.variable}  antialiased`}>
-        <AosInitializer />
         <Navbar_Box />
         {children}
         <Footer />
+        <AosInitializer />
       </body>
     </html>
   );

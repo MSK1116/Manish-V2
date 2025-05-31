@@ -59,7 +59,6 @@ const Contact = () => {
       xl:px-5 lg:flex-row">
           <div className="flex flex-col items-center w-full pt-5  pb-20 md:px-10 lg:pt-20 lg:flex-row">
             <div className="w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
-              {" "}
               <div className=" hover:scale-105 hidden transition-all w-[565.76px] h-[682.89px] duration-1000 object-contain md:flex flex-col items-center justify-center  relative lg:pr-10">
                 {submitting.success ? <Svg_sent /> : <Svg_study_time />}
               </div>
@@ -70,12 +69,11 @@ const Contact = () => {
             relative z-10">
                 <p className="w-full text-4xl font-medium text-center leading-snug font-serif">Get connected..</p>
                 <form onSubmit={handleSubmit(onSubmit)} data-aos="zoom-in-left" data-aos-delay="500" className="w-full">
-                  <input type="hidden" name="_subject" value="Portfolio!"></input>
-                  <input type="hidden" name="_template" value="table"></input>
                   <div className="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
                     <div className="relative">
                       <p className="bg-white rounded-lg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Name</p>
                       <input
+                        aria-label="Enter your fullName"
                         {...register("fullName", { required: true })}
                         name="fullName"
                         placeholder="Manish.."
@@ -89,6 +87,7 @@ const Contact = () => {
                     <div className="relative">
                       <p className="bg-white rounded-lg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Email</p>
                       <input
+                        aria-label="Enter your email"
                         {...register("email", { required: true })}
                         name="email"
                         placeholder="123@ex.com"
@@ -126,6 +125,7 @@ const Contact = () => {
                     </div>
                     <div className="relative">
                       <button
+                        aria-label="Click to submit the form"
                         disabled={submitting.processing}
                         type="submit"
                         className={` ${
