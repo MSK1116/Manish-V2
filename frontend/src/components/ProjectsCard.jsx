@@ -1,9 +1,13 @@
+import { pixelateImageToBase64 } from "@/lib/pixelate";
 import Image from "next/image";
 import React from "react";
 
 import { FaArrowCircleRight } from "react-icons/fa";
 
-const ProjectsCard = ({ items }) => {
+const ProjectsCard = async ({ items }) => {
+  const pixelateImg1 = await pixelateImageToBase64(`./public/proj/${items.img1}`);
+  const pixelateImg2 = await pixelateImageToBase64(`./public/proj/${items.img2}`);
+  const pixelateImg3 = await pixelateImageToBase64(`./public/proj/${items.img3}`);
   return (
     <>
       <input type="checkbox" id={items.id} className="modal-toggle" />
@@ -44,14 +48,20 @@ const ProjectsCard = ({ items }) => {
           <div className="shadow-md hover:shadow-xl absolute w-56 md:w-64 motion-reduce:animate-bounce md:-left-[30rem] left-[18%] md:top-48 -top-72 rounded bg-white overflow-hidden cursor-default">
             <div className="grid grid-cols-2 h-28 md:h-32">
               <div className="h-28 relative md:h-32 border border-gray-100 overflow-hidden">
-                <Image fill={true} className="object-cover object-center  hover:rotate-1 hover:scale-105 transition-all duration-300" src={`/proj/${items.img1}`} alt={" first image of" + items.title}></Image>
+                <Image
+                  placeholder="blur"
+                  blurDataURL={pixelateImg1}
+                  fill={true}
+                  className="object-cover object-center  hover:rotate-1 hover:scale-105 transition-all duration-300"
+                  src={`/proj/${items.img1}`}
+                  alt={" first image of" + items.title}></Image>
               </div>
               <div className="h-28 md:h-32 border border-gray-100 overflow-hidden">
                 <div className="h-14 md:h-16 w-full relative">
-                  <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img2}`} alt={" second image of" + items.title} fill={true} />
+                  <Image placeholder="blur" blurDataURL={pixelateImg2} className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img2}`} alt={" second image of" + items.title} fill={true} />
                 </div>
                 <div className="h-14 md:h-16 w-full relative">
-                  <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img3}`} alt={" third image of" + items.title} fill={true} />
+                  <Image placeholder="blur" blurDataURL={pixelateImg3} className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img3}`} alt={" third image of" + items.title} fill={true} />
                 </div>
               </div>
             </div>
@@ -84,14 +94,20 @@ const ProjectsCard = ({ items }) => {
             <div data-aos="fade-up" data-aos-offset="50" className="shadow-md hover:shadow-xl rounded bg-white overflow-hidden cursor-pointer">
               <div className="grid grid-cols-2 h-64">
                 <div className="h-64 relative border border-gray-100 overflow-hidden">
-                  <Image fill={true} className="object-cover object-center  hover:rotate-1 hover:scale-105 transition-all duration-300" src={`/proj/${items.img1}`} alt={" first image of" + items.title}></Image>
+                  <Image
+                    placeholder="blur"
+                    blurDataURL={pixelateImg1}
+                    fill={true}
+                    className="object-cover object-center  hover:rotate-1 hover:scale-105 transition-all duration-300"
+                    src={`/proj/${items.img1}`}
+                    alt={" first image of" + items.title}></Image>
                 </div>
                 <div className="h-64  border border-gray-100 overflow-hidden">
                   <div className=" relative h-32 w-full">
-                    <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img2}`} alt={" second image of" + items.title} fill={true} />
+                    <Image placeholder="blur" blurDataURL={pixelateImg2} className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img2}`} alt={" second image of" + items.title} fill={true} />
                   </div>
                   <div className=" relative h-32 w-full">
-                    <Image className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img3}`} alt={" third image of" + items.title} fill={true} />
+                    <Image placeholder="blur" blurDataURL={pixelateImg3} className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img3}`} alt={" third image of" + items.title} fill={true} />
                   </div>
                 </div>
               </div>

@@ -2,8 +2,10 @@ import React from "react";
 import { IoSchoolSharp } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
 import Image from "next/image";
+import { pixelateImageToBase64 } from "@/lib/pixelate";
 
-const About = () => {
+const About = async () => {
+  const pixelatedOfManish = await pixelateImageToBase64("./public/IMG_6105.jpg");
   return (
     <>
       <section name="About" className="w-full overflow-hidden h-full px-4 md:px-20 my-20 ">
@@ -115,7 +117,7 @@ const About = () => {
           </div>
           <div data-aos="zoom-in-up" data-aos-offset="-250" data-aos-duration="2000" className="w-1/2 md:relative md:block hidden">
             <div className=" rounded-r-md  absolute inset-0 z-10 bg-gradient-to-r from-gray-50 hover:opacity-0 transition-all ease-in-out duration-1000  "></div>
-            <Image className=" rounded-r-md object-cover" src={"/IMG_6105.jpg"} fill={true} alt="On the stage of GSS"></Image>
+            <Image placeholder="blur" blurDataURL={pixelatedOfManish} className=" rounded-r-md object-cover" src={"/IMG_6105.jpg"} fill={true} alt="On the stage of GSS"></Image>
           </div>
         </div>
       </section>

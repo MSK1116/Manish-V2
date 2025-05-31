@@ -7,8 +7,9 @@ import { SiMongodb, SiExpress, SiVite, SiTailwindcss } from "react-icons/si";
 import { RiNextjsLine } from "react-icons/ri";
 import { Meteors } from "@/components/Meteors";
 import { FlipWords } from "@/components/FlipWords";
-
-const Home_banner = () => {
+import { pixelateImageToBase64 } from "@/lib/pixelate";
+const Home_banner = async () => {
+  const pixelatedOfManish = await pixelateImageToBase64("./public/MSK.jpg");
   return (
     <>
       <main data-aos-duration="700" id="Home" className="w-full overflow-hidden px-4 md:px-20 mt-20 md:h-screen xl:h-[80vh] h-full pb-3">
@@ -81,7 +82,7 @@ const Home_banner = () => {
           </div>
           <div data-aos="zoom-out-left" data-aos-duration="1000" className="md:w-1/2 md:ml-48 mt-10 md:mt-16 order-1 md:order-2 flex items-center justify-center ">
             <div className="relative  w-[350px] h-[350px] md:w-[450px] md:h-[450px] ">
-              <Image className=" object-cover rounded-full " src={"/MSK.jpg"} alt="Manish's profile pic" fill={true}></Image>
+              <Image placeholder="blur" blurDataURL={pixelatedOfManish} className=" object-cover rounded-full " src={"/MSK.jpg"} alt="Manish's profile pic" fill={true}></Image>
             </div>
           </div>
         </div>

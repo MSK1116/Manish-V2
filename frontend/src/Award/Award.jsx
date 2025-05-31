@@ -7,8 +7,10 @@ import { FaHandsBubbles } from "react-icons/fa6";
 import { FaMicrophoneAlt } from "react-icons/fa";
 import { SiNasa } from "react-icons/si";
 import { EasterEggProvider } from "@/components/EasterEggContext";
+import { pixelateImageToBase64 } from "@/lib/pixelate";
 
-const Award = () => {
+const Award = async () => {
+  const pixelatedOfManish = await pixelateImageToBase64("./public//IMG_6108.jpg");
   return (
     <>
       <section name="Award" className="relative my-20 md:pt-16 w-full  overflow-hidden ">
@@ -27,7 +29,7 @@ const Award = () => {
           <div className="flex flex-wrap items-center mt-5  ">
             <div data-aos="zoom-in-up" data-aos-duration="1000" className=" w-screen md:w-1/3 px-4 mr-auto ml-auto">
               <div className=" flex flex-col break-words bg-slate-50  w-full mb-6 shadow-lg rounded-lg ">
-                <Image className=" object-cover rounded-t-md" width={1280} height={1920} src={"/IMG_6108.jpg"} alt="Manish's NASA SPACE APP"></Image>
+                <Image placeholder="blur" blurDataURL={pixelatedOfManish} className=" object-cover rounded-t-md" width={1280} height={1920} src={"/IMG_6108.jpg"} alt="Manish's NASA SPACE APP"></Image>
 
                 <blockquote data-aos-delay="700" className="relative p-8 mb-4  bg-slate-50 ">
                   <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block h-[95px] z-10 -top-[94px] ">
