@@ -8,7 +8,7 @@ const Project = () => {
 
   return (
     <>
-      <div className="w-full overflow-hidden flex flex-col container px-4 md:px-20 my-20">
+      <div className="w-full overflow-hidden flex flex-col  px-4 md:px-20 my-20">
         <section name="project" className="relative pt-16">
           <div className="container mx-auto">
             <div>
