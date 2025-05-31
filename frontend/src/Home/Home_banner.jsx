@@ -11,7 +11,7 @@ import { FlipWords } from "@/components/FlipWords";
 const Home_banner = () => {
   return (
     <>
-      <div data-aos-duration="700" id="Home" className="w-full overflow-hidden px-4 md:px-20 mt-20 md:h-screen h-full pb-3">
+      <div data-aos-duration="700" id="Home" className="w-full overflow-hidden px-4 md:px-20 mt-20 md:h-screen lg:h-[80vh] h-full pb-3">
         <div className="flex relative  flex-col  md:flex-row">
           <Meteors />
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
