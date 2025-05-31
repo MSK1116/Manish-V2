@@ -1,7 +1,7 @@
 import { Radio_Canada_Big } from "next/font/google";
 import "./globals.css";
 import Navbar_Box from "@/components/Navbar/Navbar_Box";
-import AosInitializer from "@/components/Aosinitializer";
+import AosInitializer from "@/components/AosInitializer";
 import Footer from "@/components/Footer/Footer";
 const radioCanadaBig = Radio_Canada_Big({
   subsets: ["latin"],
