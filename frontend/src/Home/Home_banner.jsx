@@ -11,7 +11,7 @@ import { FlipWords } from "@/components/FlipWords";
 const Home_banner = () => {
   return (
     <>
-      <div data-aos-duration="700" id="Home" className="w-full overflow-hidden px-4 md:px-20 mt-20 md:h-screen xl:h-[80vh] h-full pb-3">
+      <main data-aos-duration="700" id="Home" className="w-full overflow-hidden px-4 md:px-20 mt-20 md:h-screen xl:h-[80vh] h-full pb-3">
         <div className="flex relative  flex-col  md:flex-row">
           <Meteors />
           <div className="md:w-1/2 mt-12 md:mt-24 space-y-2 order-2 md:order-1">
@@ -85,7 +85,7 @@ const Home_banner = () => {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <span data-aos="zoom-in" data-aos-duration="500" className="flex items-center">
         <span className="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></span>
         <span className="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></span>

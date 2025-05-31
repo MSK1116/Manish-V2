@@ -11,7 +11,7 @@ import { EasterEggProvider } from "@/components/EasterEggContext";
 const Award = () => {
   return (
     <>
-      <section name="Award" className="relative my-20 md:pt-16 overflow-hidden max-w-screen-2xl w-full ">
+      <section name="Award" className="relative my-20 md:pt-16 w-full  overflow-hidden ">
         <div className="container mx-auto">
           <div className=" px-4 md:px-20">
             <h4 data-aos="fade-down" className="text-3xl font-semibold text-red-600 capitalize lg:text-4xl ">

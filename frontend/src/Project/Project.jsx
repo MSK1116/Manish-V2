@@ -8,8 +8,8 @@ const Project = () => {
 
   return (
     <>
-      <div className="max-w-screen-2xl flex flex-col container px-4 md:px-20 my-20">
-        <section name="project" className="relative pt-16 bg-blueGray-50">
+      <div className="w-full overflow-hidden flex flex-col container px-4 md:px-20 my-20">
+        <section name="project" className="relative pt-16">
           <div className="container mx-auto">
             <div>
               <h4 data-aos="fade-down" className="text-3xl font-semibold text-red-600 lg:text-4xl ">
