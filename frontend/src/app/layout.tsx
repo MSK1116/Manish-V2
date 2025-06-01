@@ -1,4 +1,4 @@
-import { Black_Ops_One, Lora, Radio_Canada_Big } from "next/font/google";
+import { Lora, Radio_Canada_Big } from "next/font/google";
 import "./globals.css";
 import Navbar_Box from "@/components/Navbar/Navbar_Box";
 import AosInitializer from "@/components/AosInitializer";

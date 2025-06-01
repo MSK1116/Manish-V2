@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowDropright } from "react-icons/io";
 
@@ -45,12 +45,12 @@ const Studio_banner = ({ pixelImg }) => {
             <p data-aos="fade-right" className=" tracking-wider ">
               Photography, for me, isn’t about perfection. It’s about presence.
             </p>
-            <div data-aos="zoom-in-up" className=" group/btn select-none active:scale-95 overflow-hidden w-44 px-4 py-2  cursor-pointer flex items-center justify-center relative mx-auto  bg-gray-300 space-x-2">
+            <Link href={"/studio/gallery"} data-aos="zoom-in-up" className=" group/btn select-none active:scale-95 overflow-hidden w-44 px-4 py-2  cursor-pointer flex items-center justify-center relative mx-auto  bg-gray-300 space-x-2">
               <div className=" absolute inset-0 p-1 w-fit flex items-center justify-center -translate-x-16 group-hover/btn:translate-x-0 transition-all duration-300 ">
                 <IoIosArrowDropright className=" size-6" />
               </div>
               <div> Explore Gallery</div>
-            </div>
+            </Link>
           </div>
           <div className="relative w-1/2 ">
             <Image data-aos="zoom-in-left" className=" rotate-12 border-2 border-amber-400 object-contain  rounded-l-md " fill={true} src={"/studio/ManihsWithCamera.jpg"} alt="ManihsWithCamera"></Image>
