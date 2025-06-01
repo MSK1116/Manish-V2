@@ -1,11 +1,16 @@
-import { Radio_Canada_Big } from "next/font/google";
+import { Black_Ops_One, Lora, Radio_Canada_Big } from "next/font/google";
 import "./globals.css";
 import Navbar_Box from "@/components/Navbar/Navbar_Box";
 import AosInitializer from "@/components/AosInitializer";
 import Footer from "@/components/Footer/Footer";
+
 const radioCanadaBig = Radio_Canada_Big({
   subsets: ["latin"],
   variable: "--font-radio-canada-big",
+});
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
 });
 
 export const metadata = {
@@ -71,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <head></head>
-      <body className={`${radioCanadaBig.variable}  antialiased`}>
+      <body className={`${radioCanadaBig.variable}   antialiased  ${lora.variable} `}>
         <Navbar_Box />
         {children}
         <Footer />

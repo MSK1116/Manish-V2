@@ -6,6 +6,9 @@ body {
   font-family: var(--font-radio-canada-big), sans-serif;
   scroll-behavior: smooth;
 }
+.font-lora {
+  font-family: var(--font-lora), sans-serif;
+}
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -61,4 +64,34 @@ body {
 /* Apply the animation */
 .animate-slide-bounce {
   animation: slide-bounce 3s infinite; /* Infinite loop with 1-second duration */
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-66.66%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-66.66%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-left-medium {
+  animation: marquee-left 15s linear infinite alternate;
+}
+
+.animate-marquee-right-slow {
+  animation: marquee-right 30s linear infinite alternate;
+}
+
+.animate-marquee-right-fast {
+  animation: marquee-right 30s linear infinite alternate;
 }

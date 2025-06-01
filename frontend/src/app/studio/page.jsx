@@ -1,6 +1,8 @@
 import React from "react";
 import Studio_banner from "./Studio_banner";
+
 import { pixelateImageToBase64 } from "@/lib/pixelate";
+
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
 
@@ -68,7 +70,6 @@ const page = async () => {
   return (
     <>
       <Studio_banner pixelImg={{ pixelatedImg1, pixelatedImg2 }} />
-      <div className=" h-screen w-full"></div>
     </>
   );
 };
