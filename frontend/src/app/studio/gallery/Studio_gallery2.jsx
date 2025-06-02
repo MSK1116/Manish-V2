@@ -15,7 +15,7 @@ const Studio_gallery2 = ({ images }) => {
         <div className="h-[80vh] mt-5">
           <div className=" flex md:flex-row h-full flex-col py-4 ">
             <div className="md:w-[70%] w-full overflow-hidden h-full relative ">
-              <Image className=" rounded-md object-cover" placeholder="blur" fill={true} blurDataURL={arrangedImageList[0].base64} src={`/studio/${arrangedImageList[0].link}`} alt={arrangedImageList[0].description}></Image>
+              <Image className=" rounded-md object-cover" placeholder="blur" fill={true} blurDataURL={arrangedImageList[0].base64} src={`/studio/${arrangedImageList[0].link}`} alt={arrangedImageList[0].metaDescription}></Image>
               <div data-aos="fade-right" data-aos-offset="-20" className=" group/view-btn absolute cursor-pointer flex bottom-5 space-x-2 h-7 pr-4 text-sm w-fit bg-slate-300/80 rounded-r-md p-1 text-center">
                 <span> {arrangedImageList[0].title}</span>
                 <button className=" overflow-hidden   relative" type="button">
@@ -43,7 +43,7 @@ const Studio_gallery2 = ({ images }) => {
                         src={`/studio/${images.link_low}`}
                         blurDataURL={images.base64}
                         placeholder="blur"
-                        alt={images.description}></Image>
+                        alt={images.metaDescription}></Image>
                       <div className=" h-fit px-3 md:translate-y-20 md:group-hover/galleryDes:translate-y-0 transition-all duration-500 absolute w-full bottom-0 text-sm text-nowrap truncate bg-gray-200/75">{images.title}</div>
                     </div>
                   );

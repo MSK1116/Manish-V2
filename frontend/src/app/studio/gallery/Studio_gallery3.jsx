@@ -27,7 +27,7 @@ const Studio_gallery4 = async ({ images }) => {
                     placeholder="blur"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     src={`/studio/${images.link_low}`}
-                    alt={images.description}></Image>
+                    alt={images.metaDescription}></Image>
                   <div className=" h-fit px-3 md:translate-y-20 md:group-hover/galleryDes:translate-y-0 transition-all duration-500 absolute w-full bottom-0 text-sm text-nowrap truncate bg-gray-200/75">{images.title}</div>
                 </Link>
               </div>

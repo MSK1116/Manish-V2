@@ -20,14 +20,14 @@ export async function generateMetadata({ params }, parent) {
 
   return {
     title: `${image.title} | Manish Singh Mahato`,
-    description: image.description,
+    description: image.metaDescription,
     openGraph: {
       title: image.title,
       description: image.description,
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/studio/gallery/view/${image.slug}`,
       images: [
         {
-          url: `/studio/${image.link}`,
+          url: `/studio/gallery/view/${image.link}`,
           width: 1200,
           height: 800,
           alt: image.title,
