@@ -9,8 +9,8 @@ const Studio_gallery2 = ({ images }) => {
     <>
       <main className=" w-full overflow-hidden font-lora p-8">
         <div>
-          <h1 className=" text-2xl  font-medium">Welcome to gallery</h1>
-          <h2> a quiet space where nature, light, and abstraction meet. Every image here is a pause, a breath, a way of seeing the world beyond words.</h2>
+          <h1 className=" text-2xl font-medium text-center md:text-left">Welcome to gallery</h1>
+          <h2 className=" text-center md:text-left"> a quiet space where nature, light, and abstraction meet. Every image here is a pause, a breath, a way of seeing the world beyond words.</h2>
         </div>
         <div className="h-[80vh] mt-5">
           <div className=" flex md:flex-row h-full flex-col py-4 ">
@@ -36,7 +36,7 @@ const Studio_gallery2 = ({ images }) => {
                   return (
                     <div key={index} className="relative font-radio group/galleryDes hover:-translate-y-0.5 active:scale-95 cursor-pointer overflow-hidden   transition-all duration-500 ">
                       <Image width={800} height={1100} className="w-full h-auto object-cover rounded-md " sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" src={`/studio/${images.link_low}`} alt={images.description}></Image>
-                      <div className=" h-fit px-3 translate-y-20 group-hover/galleryDes:translate-y-0 transition-all duration-500 absolute w-full bottom-0  bg-gray-200/75">{images.title}</div>
+                      <div className=" h-fit px-3 md:translate-y-20 md:group-hover/galleryDes:translate-y-0 transition-all duration-500 absolute w-full bottom-0 text-sm text-nowrap truncate bg-gray-200/75">{images.title}</div>
                     </div>
                   );
                 })}

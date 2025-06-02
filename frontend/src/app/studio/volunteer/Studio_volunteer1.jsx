@@ -6,7 +6,7 @@ import { IoIosArrowDropright } from "react-icons/io";
 const Studio_volunteer1 = () => {
   return (
     <>
-      <div className=" relative md:h-screen md:flex font-lora  items-center md:p-8 p-3 w-full">
+      <div className=" relative md:h-screen md:flex font-lora  items-center md:p-8 p-3 w-full bg-gray-50">
         <div className="p-4 md:w-1/2 h-auto mt-20 md:mt-1  max-h-fit ">
           <p data-aos="fade-down" className="text-xl text-gray-800 font-thin text-center cursor-default">
             <span className=" hover:animate-pulse   font-bold text-blue-700 tracking-wide">Contributing</span>, <span className=" tracking-wide hover:animate-pulse font-bold text-red-600">donating</span>, and{" "}
@@ -15,7 +15,7 @@ const Studio_volunteer1 = () => {
           </p>
         </div>
         <div className=" overflow-hidden md:relative md:w-1/2 w-full h-full ">
-          <Image className=" object-cover hidden md:block " data-aos="fade-left" data-aos-duration="1000" src="/studio/clipart/Mcamera4.png" fill={true}></Image>
+          <Image alt="Image of two people sharing camera and teaching each other" className=" object-cover hidden md:block " data-aos="fade-left" data-aos-duration="1000" src="/studio/clipart/Mcamera4.png" fill={true}></Image>
           <div className=" md:absolute inset-0 flex justify-center items-center  size-full md:p-20 p-5">
             <form
               encType="multipart/form-data"
@@ -56,8 +56,8 @@ const Studio_volunteer1 = () => {
             </form>
           </div>
         </div>
-        <div className=" overflow-hidden size-fit absolute bottom-0 left-0">
-          <img data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-10" src="/studio/clipart/Plant1.png" className="w-48"></img>
+        <div className=" overflow-hidden size-fit absolute bottom-0 md:left-0 -left-10">
+          <img data-aos="fade-up" data-aos-duration="1000" data-aos-offset="-10" alt="Image of flower" src="/studio/clipart/Plant1.png" className="md:w-48 w-40"></img>
         </div>
       </div>
     </>
