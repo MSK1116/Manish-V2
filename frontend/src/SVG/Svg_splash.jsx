@@ -3,16 +3,7 @@ import React from "react";
 const Svg_splash = ({ height, width }) => {
   return (
     <>
-      <svg
-        className=" hover:opacity-85 opacity-80 transition-all duration-700  hover:scale-105"
-        height="100%"
-        width="100%"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlnsXlink="http://www.w3.org/1999/xlink"
-        zoomAndPan="magnify"
-        viewBox="0 0 375 374.999991"
-        preserveAspectRatio="xMidYMid meet"
-        version="1.0">
+      <svg className="  opacity-80" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify" viewBox="0 0 375 374.999991" preserveAspectRatio="xMidYMid meet" version="1.0">
         <defs>
           <clipPath id="1028ead674">
             <path d="M 282 372 L 285 372 L 285 374.25 L 282 374.25 Z M 282 372 " clipRule="nonzero" />

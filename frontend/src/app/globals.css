@@ -9,6 +9,9 @@ body {
 .font-lora {
   font-family: var(--font-lora), sans-serif;
 }
+.font-radio {
+  font-family: var(--font-radio-canada-big), sans-serif;
+}
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
