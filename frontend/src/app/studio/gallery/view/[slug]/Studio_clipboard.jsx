@@ -16,7 +16,7 @@ const Studio_clipboard = ({ link }) => {
   };
   return (
     <>
-      <div onClick={handleCopy} className=" ">
+      <div title="Copy link" onClick={handleCopy} className=" cursor-pointer active:scale-95">
         {copied ? <FaClipboardCheck className=" text-gray-800 size-7" /> : <FaClipboardList className="text-gray-800 size-7" />}
       </div>
     </>

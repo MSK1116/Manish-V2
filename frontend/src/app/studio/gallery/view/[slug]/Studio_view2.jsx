@@ -20,20 +20,20 @@ const Studio_view2 = ({ image }) => {
           </div>
           <div className=" flex w-fit items-center space-x-4 mt-4">
             <a href={`/studio/${image.link}`} download={image.title + " by Studio | Manish Singh Mahato"}>
-              <button className=" overflow-hidden bg-gray-300  px-3 py-2 rounded-md group/download-btn  relative" type="button">
+              <button className=" active:scale-95 overflow-hidden bg-gray-300  px-3 py-2 rounded-md group/download-btn  relative" type="button">
                 <div className=" justify-center size-full">
                   <h4 className=" group-hover/download-btn:translate-x-40 text-sm transition-all duration-700">Download</h4>
                   <div className=" -translate-x-32 group-hover/download-btn:translate-x-0 absolute flex inset-0  items-center justify-center z-10 transition-all duration-500">⬇️</div>
                 </div>
               </button>
             </a>
-            <a>
+            <a className=" active:scale-95" aria-label="Share via Facebook" target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.manishmahato.info.np/studio/view/${image.title}`}>
               <FaFacebook className="size-7 text-[#3B5998]" />
             </a>
-            <a>
+            <a className=" active:scale-95" target="_blank" aria-label="Share and message via WhatsApp" href={`https://api.whatsapp.com/send?text=Check+this+out:+https://www.manishmahato.info.np/studio/view/${image.title}`}>
               <FaWhatsapp className="size-7 text-[#128C7E]" />
             </a>
-            <div>
+            <div aria-label="Copy link to clipboard">
               <Studio_clipboard link={image.link} />
             </div>
           </div>

@@ -110,16 +110,9 @@ const Navbar_Box = () => {
       </li>
       <li
         className={` ${
-          pathname == "/gallery/volunteer" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
+          pathname == "/studio/volunteer" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
         } hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
         <NextLink href={"/studio/volunteer"}> Volunteer</NextLink>
-      </li>
-
-      <li
-        className={` ${
-          pathname == "/studio/tool" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
-        } hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
-        <NextLink href={"/studio/exiftool"}> EXIF Tool</NextLink>
       </li>
     </>
   );
@@ -129,7 +122,7 @@ const Navbar_Box = () => {
       <nav className={` w-full rounded-sm px-4 md:px-20 h-16 shadow-lg fixed top-0 left-0 right-0 z-50 transition-colors duration-500 bg-slate-50/75 ${sticky ? " bg-slate-200" : ""} `}>
         <div className=" flex justify-between items-center h-16 ">
           <EasterEggProvider>
-            <Navbar_ProfilePic />
+            <Navbar_ProfilePic subtitle={checkPath ? "STUDIO" : "Web Portfolio"} />
           </EasterEggProvider>
           <div>
             <ul className="hidden md:flex flex-row gap-x-8  text-gray-900">{checkPath ? navList2 : navList}</ul>

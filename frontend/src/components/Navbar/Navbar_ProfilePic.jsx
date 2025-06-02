@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEasterEgg } from "@/components/EasterEggContext";
 import Easteregg from "../Easteregg";
 
-const Navbar_ProfilePic = () => {
+const Navbar_ProfilePic = ({ subtitle }) => {
   const [stickMan, setStickyMan] = useState(false);
   const [stickMan1, setStickyMan1] = useState(false);
   const [stickMan1Walking, setStickyMan1Walking] = useState(false);
@@ -74,7 +74,7 @@ const Navbar_ProfilePic = () => {
         </div>
         <div className=" text-gray-900">
           Manis<span className=" text-red-700">h</span>
-          <p className="text-sm">Web Portfolio</p>
+          <p className="text-sm tracking-wider ">{subtitle}</p>
         </div>
 
         <div className={` absolute -top-4 -right-16 size-20 `}>

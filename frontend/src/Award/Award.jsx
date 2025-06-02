@@ -13,7 +13,7 @@ const Award = async () => {
   const pixelatedOfManish = await pixelateImageToBase64("./public//IMG_6108.jpg");
   return (
     <>
-      <section name="Award" className="relative my-20 md:pt-16 w-full  overflow-hidden ">
+      <section name="Award" className="relative my-10 md:py-20 md:pt-16 w-full px-4  overflow-hidden ">
         <div className="container mx-auto">
           <div className=" px-4 md:px-20">
             <h4 data-aos="fade-down" className="text-3xl font-semibold text-red-600 capitalize lg:text-4xl ">

@@ -19,8 +19,8 @@ const About = async () => {
             <span data-aos="fade-left" data-aos-delay="300" className="inline-block w-1 h-1 ml-1 rounded-full bg-blue-500"></span>
           </div>
         </div>
-        <div className=" h-full w-full px-6 py-10 mx-auto  flex ">
-          <div className="w-1/2 space-y-12 ">
+        <div className=" h-full w-full md:px-6 px-3 py-10 mx-auto  flex ">
+          <div className="md:w-1/2 w-full space-y-12  ">
             {/* education list */}
             <div data-aos="fade-up-right" data-aos-duration="1000" className="md:flex md:items-start md:-mx-4">
               <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 ">
@@ -28,7 +28,7 @@ const About = async () => {
               </span>
               <div className="mt-4 md:mx-4 space-y-2 md:mt-0">
                 <h5 className="text-2xl font-semibold text-gray-700 capitalize ">Education</h5>
-                <ul className="flex flex-col mr-4 space-y-5">
+                <ul className="flex flex-col md:mr-4 mr-0 space-y-2 ">
                   <li data-aos="fade-right" data-aos-duration="700" data-aos-offset="-5" className="">
                     +2 Science: School Leaving Certificate (SLC) <br></br> GPA:- 11th: 3.73 & 12th: 3.65 <br></br> National Examination Board (NEB), 2080BS <br></br>Capital College & Research Center (CCRC)-Balkumari, KTM
                     <span className="flex items-center mt-5">
@@ -52,9 +52,9 @@ const About = async () => {
               <span className="inline-block p-2 text-blue-500 bg-blue-100 rounded-xl md:mx-4 ">
                 <MdWork className="w-6 h-6" />
               </span>
-              <div className="mt-4 md:mx-4 md:mt-0 space-y-2">
+              <div className="mt-4 md:mx-4 md:mt-0  space-y-2">
                 <h5 className="text-2xl font-semibold text-gray-700 capitalize ">Experience</h5>
-                <ul className="space-y-4 pt-2">
+                <ul className="space-y-2 pt-2 ">
                   {[
                     {
                       link: "https://thinkbig.org.np/",
@@ -93,11 +93,11 @@ const About = async () => {
                     },
                   ].map((item, index, arr) => (
                     <li key={index} data-aos="fade-right" data-aos-duration="700" data-aos-offset="-5">
-                      <div className="flex space-x-4 size-fit overflow-hidden pl-2">
-                        <a target="_blank" rel="noopener noreferrer" className="group relative rounded-full border size-10 border-gray-200" href={item.link}>
+                      <div className="flex space-x-4 size-fit items-center md:items-start overflow-hidden pl-2">
+                        <a target="_blank" rel="noopener noreferrer" className="group relative rounded-full border size-10  min-w-10  border-gray-200" href={item.link}>
                           <Image src={item.image} alt={item.alt} fill={true} className="object-cover rounded-full transition-all duration-700 group-hover:scale-90" />
                         </a>
-                        <p>
+                        <p className=" ">
                           {item.title} <br />
                           {item.subtitle}
                         </p>

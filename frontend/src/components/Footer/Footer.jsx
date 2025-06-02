@@ -5,11 +5,10 @@ import Footer_scroll from "./Footer_scroll";
 import SystemInfo from "../SystemInfo";
 
 const Footer = () => {
-  // const { lastUpdated, connectionInfo } = SystemInfo();
   return (
     <>
       <footer data-aos="fade-up" className="  w-full overflow-hidden h-fit p-8  bg-gradient-to-b from-slate-100 to-slate-200 ">
-        <div data-aos="fade-up" data-aos-duration="1000" className="relative h-full  w-full ">
+        <div className="relative h-full  w-full ">
           <Footer_scroll />
           <div className="lg:flex lg:items-end lg:justify-between">
             <div>
