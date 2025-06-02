@@ -29,7 +29,9 @@ const Studio_gallery4 = ({ images }) => {
         <div className=" size-full relative">
           <Image className=" object-cover" src={"/studio/clipart/vintageLens.jpg"} alt="Vintage lens photo" fill={true}></Image>
           <div className=" inset-0 p-8 absolute flex flex-col space-y-5 md:items-end items-center justify-end md:justify-start md:bg-gradient-to-l bg-gradient-to-t md:from-gray-600/50 from-gray-600/75 to-gray-700/10">
-            <h1 className=" text-2xl font-semibold mt-10 text-center md:text-left">If something here spoke to you — I’d love to hear from you.</h1>
+            <h1 data-aos="fade-up" className=" text-2xl font-semibold mt-10 text-center md:text-left">
+              If something here spoke to you — I’d love to hear from you.
+            </h1>
             <div className=" flex flex-col md:flex-row w-fit md:gap-x-6 gap-3">
               <Link href={"/studio/gallery"} data-aos="zoom-in-up" className=" group/btn select-none active:scale-95 overflow-hidden w-44 px-4 py-2  cursor-pointer flex items-center justify-center relative mx-auto  bg-gray-300 space-x-2">
                 <div className=" absolute inset-0 p-1 w-fit flex items-center justify-center md:-translate-x-16 md:group-hover/btn:translate-x-0 transition-all duration-300 ">
@@ -37,7 +39,9 @@ const Studio_gallery4 = ({ images }) => {
                 </div>
                 <div className=""> Reach out</div>
               </Link>
-              <div className=" justify-center items-center flex">Or</div>
+              <div data-aos="zoom-in" className=" justify-center items-center flex">
+                Or
+              </div>
               <Link href={"/studio/gallery"} data-aos="zoom-in-up" className=" group/btn select-none active:scale-95 overflow-hidden w-52 px-4 py-2  cursor-pointer flex items-center justify-center relative mx-auto  bg-gray-300 space-x-2">
                 <div className=" absolute inset-0 p-1 w-fit flex items-center justify-center md:-translate-x-16 md:group-hover/btn:translate-x-0 transition-all duration-300 ">
                   <IoIosArrowDropright className=" size-5 md:size-6" />
@@ -45,7 +49,9 @@ const Studio_gallery4 = ({ images }) => {
                 <div>Volunteer with me</div>
               </Link>
             </div>
-            <h2 className=" text-medium tracking-wider text-center md:text-right">and help bring more quiet beauty into the world.</h2>
+            <h2 data-aos="fade-up" className=" text-medium tracking-wider text-center md:text-right">
+              and help bring more quiet beauty into the world.
+            </h2>
           </div>
         </div>
       </div>
