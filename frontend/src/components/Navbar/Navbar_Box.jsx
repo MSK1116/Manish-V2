@@ -11,7 +11,7 @@ import NextLink from "next/link";
 const Navbar_Box = () => {
   const [sticky, setSticky] = useState(false);
   const pathname = usePathname();
-  const checkPath = ["/studio", "/studio/gallery"].includes(pathname);
+  const checkPath = pathname.startsWith("/studio");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,7 +104,7 @@ const Navbar_Box = () => {
       </li>
       <li
         className={` ${
-          pathname == "/gallery" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
+          pathname == "/studio/gallery" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
         } hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
         <NextLink href={"/studio/gallery"}>Gallery </NextLink>
       </li>
