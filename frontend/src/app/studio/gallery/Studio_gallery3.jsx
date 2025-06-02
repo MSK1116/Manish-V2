@@ -1,9 +1,11 @@
+import { pixelateImageToBase64 } from "@/lib/pixelate";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoIosArrowDropright } from "react-icons/io";
 
-const Studio_gallery4 = ({ images }) => {
+const Studio_gallery4 = async ({ images }) => {
+  const pixelatedImg1 = await pixelateImageToBase64("./public/studio/clipart/vintageLens.jpg");
   return (
     <>
       <div className=" w-full overflow-hidden p-8 font-lora space-y-5">
@@ -17,7 +19,15 @@ const Studio_gallery4 = ({ images }) => {
             return (
               <div key={index} className="font-radio group/galleryDes hover:-translate-y-0.5 active:scale-95 cursor-pointer overflow-hidden transition-all duration-500 ">
                 <Link href={`/studio/gallery/view/${images.id}`} className=" relative">
-                  <Image width={800} height={1100} className="w-full h-auto object-cover rounded-md " sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw" src={`/studio/${images.link_low}`} alt={images.description}></Image>
+                  <Image
+                    width={800}
+                    height={1100}
+                    className="w-full h-auto object-cover rounded-md "
+                    blurDataURL={images.base64}
+                    placeholder="blur"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    src={`/studio/${images.link_low}`}
+                    alt={images.description}></Image>
                   <div className=" h-fit px-3 md:translate-y-20 md:group-hover/galleryDes:translate-y-0 transition-all duration-500 absolute w-full bottom-0 text-sm text-nowrap truncate bg-gray-200/75">{images.title}</div>
                 </Link>
               </div>
@@ -27,7 +37,7 @@ const Studio_gallery4 = ({ images }) => {
       </div>
       <div className=" w-full md:h-[80vh] h-[70vh] overflow-hidden font-lora">
         <div className=" size-full relative">
-          <Image className=" object-cover" src={"/studio/clipart/vintageLens.jpg"} alt="Vintage lens photo" fill={true}></Image>
+          <Image className=" object-cover" src={"/studio/clipart/vintageLens.jpg"} placeholder="blur" blurDataURL={pixelatedImg1} alt="Vintage lens photo" fill={true}></Image>
           <div className=" inset-0 p-8 absolute flex flex-col space-y-5 md:items-end items-center justify-end md:justify-start md:bg-gradient-to-l bg-gradient-to-t md:from-gray-600/50 from-gray-600/75 to-gray-700/10">
             <h1 data-aos="fade-up" className=" text-2xl font-semibold mt-10 text-center md:text-left">
               If something here spoke to you — I’d love to hear from you.

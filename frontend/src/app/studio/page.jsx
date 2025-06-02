@@ -66,7 +66,7 @@ export const metadata = {
 
 const page = async () => {
   const pixelatedImg1 = await pixelateImageToBase64("./public/studio/IMG_5547.jpg");
-  const pixelatedImg2 = await pixelateImageToBase64("./public/studio/IMG_0779.jpg");
+  const pixelatedImg2 = await pixelateImageToBase64("./public/studio/ManihsWithCamera.jpg");
   return (
     <>
       <Studio_banner pixelImg={{ pixelatedImg1, pixelatedImg2 }} />

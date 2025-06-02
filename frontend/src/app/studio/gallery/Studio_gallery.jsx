@@ -73,7 +73,14 @@ const StudioGallery = ({ images }) => {
                           }}
                           className="absolute inset-0 origin-bottom ">
                           <div onClick={() => handleImageClick(index)} className="relative h-full  w-full  cursor-pointer">
-                            <Image className=" object-cover size-full md:rounded-3xl rounded-xl" fill={true} draggable={true} src={`/studio/${testimonial.link_low}`} alt={testimonial.description}></Image>
+                            <Image
+                              className=" object-cover size-full md:rounded-3xl rounded-xl"
+                              fill={true}
+                              blurDataURL={testimonial.base64}
+                              placeholder="blur"
+                              draggable={true}
+                              src={`/studio/${testimonial.link_low}`}
+                              alt={testimonial.description}></Image>
                           </div>
                         </motion.div>
                       ))}
@@ -102,7 +109,7 @@ const StudioGallery = ({ images }) => {
               exit={{ opacity: 0, scale: 0.5, originX: 0.5, originY: 0.5 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="size-full absolute top-0 left-0">
-              <Image className="size-full object-cover" src={`/studio/${imageList[click].link}`} alt={imageList[click].title} fill={true}></Image>
+              <Image className="size-full object-cover" src={`/studio/${imageList[click].link}`} blurDataURL={imageList[click].base64} placeholder="blur" alt={imageList[click].title} fill={true}></Image>
               <motion.div initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}>
                 <div className=" group/view-btn absolute cursor-pointer flex bottom-5 space-x-2 h-7 pr-4 text-sm w-fit bg-slate-300/80 rounded-r-md p-1 text-center">
                   <span> {imageList[click].title}</span>

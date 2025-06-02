@@ -7,7 +7,7 @@ import { IoIosArrowDropright } from "react-icons/io";
 import VerticalMarquee from "./VerticalMarquee";
 
 const Studio_banner = ({ pixelImg }) => {
-  const { pixelatedImg1 } = pixelImg;
+  const { pixelatedImg1, pixelatedImg2 } = pixelImg;
   return (
     <>
       <main className={` w-full overflow-hidden md:min-h-screen h-full md:h-full `}>
@@ -53,7 +53,7 @@ const Studio_banner = ({ pixelImg }) => {
             </Link>
           </div>
           <div className="relative md:w-1/2 w-full md:h-full h-[50vh]   md:order-2 order-1 ">
-            <Image data-aos="zoom-in-left" className=" rotate-12 border-2 border-amber-400 object-contain  rounded-l-md " fill={true} src={"/studio/ManihsWithCamera.jpg"} alt="ManihsWithCamera"></Image>
+            <Image placeholder="blur" blurDataURL={pixelatedImg2} data-aos="zoom-in-left" className=" rotate-12 border-2 border-amber-400 object-contain  rounded-l-md " fill={true} src={"/studio/ManihsWithCamera.jpg"} alt="ManihsWithCamera"></Image>
           </div>
         </div>
       </section>

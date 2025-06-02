@@ -25,7 +25,7 @@ const Studio_view = ({ image }) => {
         </div>
         <div className=" flex md:flex-row flex-col rounded-md bg-gray-100 overflow-hidden md:h-[80vh] h-full px-5 md:px-10 md:py-8 py-0 font-lora ">
           <figure className=" md:w-[60%] w-full h-[65vh]  md:h-full flex justify-center relative">
-            <Image className=" object-contain " src={`/studio/${image.link}`} fill={true} alt={image.description}></Image>
+            <Image blurDataURL={image.base64} placeholder="blur" className=" object-contain " src={`/studio/${image.link}`} fill={true} alt={image.description}></Image>
           </figure>
 
           <article className=" md:max-w-[40%] w-full md:p-4 md:py-4 py-2">
