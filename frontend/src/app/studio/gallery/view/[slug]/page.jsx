@@ -10,13 +10,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }, parent) {
+export async function generateMetadata({ params }) {
   const { slug } = await params;
   const image = imageData.find((img) => img.slug === slug);
 
   if (!image) return { title: "Not Found" };
-
-  const parentMeta = await parent;
 
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
@@ -33,7 +31,6 @@ export async function generateMetadata({ params }, parent) {
           height: 800,
           alt: image.metaDescription,
         },
-        ...(parentMeta?.openGraph?.images || []),
       ],
     },
     alternates: {
