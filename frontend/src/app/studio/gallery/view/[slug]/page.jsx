@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import imageData from "../../../../../../public/studio/img.json";
 import Studio_view from "./Studio_view";
 import Studio_view2 from "./Studio_view2";
