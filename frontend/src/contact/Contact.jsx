@@ -5,13 +5,10 @@ import dynamic from "next/dynamic";
 const Svg_study_time = dynamic(() => import("../SVG/Svg_study_time"), { ssr: false });
 const Svg_sent = dynamic(() => import("../SVG/Svg_sent"), { ssr: false });
 const Svg_Dot = dynamic(() => import("../SVG/Svg_Dot"), { ssr: false });
-const PhoneInput = dynamic(() => import("react-phone-number-input"), { ssr: false });
 
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { RiErrorWarningLine } from "react-icons/ri";
 import axios from "axios";
-
-import "react-phone-number-input/style.css";
 
 const Contact = () => {
   const [submitting, setSubmitting] = useState({ processing: false, success: false, message: null });
@@ -80,6 +77,7 @@ const Contact = () => {
                         name="fullName"
                         placeholder="Manish.."
                         type="text"
+                        autoComplete="name"
                         className="border placeholder-gray-400 focus:outline-none
                   focus:border-[#5ac1b0] w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white
                   border-gray-300 rounded-md"
@@ -92,6 +90,7 @@ const Contact = () => {
                         aria-label="Enter your email"
                         {...register("email", { required: true })}
                         name="email"
+                        autoComplete="email"
                         placeholder="123@ex.com"
                         type="email"
                         className="border placeholder-gray-400 focus:outline-none
@@ -99,33 +98,23 @@ const Contact = () => {
                   border-gray-300 rounded-md"
                       />
                       {errors.email && <RiErrorWarningLine className=" absolute right-0 top-[35%]  mx-1 text-red-500" />}{" "}
-                    </div>{" "}
+                    </div>
                     <div className="relative">
-                      <p className="bg-white rounded-lg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Phone Number</p>
-                      <Controller
-                        className=""
+                      <p className="bg-white rounded-lg pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Phone number</p>
+                      <input
+                        aria-label="Enter your phone number"
+                        {...register("phoneNumber", { required: true })}
                         name="phoneNumber"
-                        control={control}
-                        defaultValue=""
-                        rules={{
-                          required: "Phone number is required",
-                        }}
-                        render={({ field: { onChange, value } }) => (
-                          <div className="  ">
-                            <PhoneInput
-                              countrySelectProps={{ unicodeFlags: true }}
-                              placeholder="+977 9812055XX"
-                              value={value}
-                              onChange={onChange}
-                              defaultCountry="NP"
-                              international
-                              className="w-full border placeholder-gray-400   pt-4 pr-4 pb-4 pl-4 mt-2 text-base block bg-white border-gray-300 focus-within:border-[#5ac1b0]  rounded-md"
-                            />
-                          </div>
-                        )}
+                        placeholder="+977 9812055778"
+                        autoComplete="tel"
+                        type="tel"
+                        className="border placeholder-gray-400 focus:outline-none
+                  focus:border-[#5ac1b0] w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white
+                  border-gray-300 rounded-md"
                       />
                       {errors.phoneNumber && <RiErrorWarningLine className=" absolute right-0 top-[35%]  mx-1 text-red-500" />}{" "}
                     </div>
+
                     <div className="relative">
                       <button
                         aria-label="Click to submit the form"
