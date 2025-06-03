@@ -51,7 +51,6 @@ export const EasterEggProvider = ({ children }) => {
     if (allCookies) {
       const parsedData = Object.fromEntries(allCookies.map((item) => item.split("=")));
       if (parsedData.eggFound) {
-        console.log(parsedData.eggFound);
         return parsedData.eggFound;
       } else {
         return 0;
