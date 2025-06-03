@@ -8,7 +8,7 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
 
   title: "Gallery | Photography by Manish Singh Mahato",
-  description: "A personal gallery by Manish Singh Mahato, capturing nature's beauty — from tiny insects to vast mountains. Explore moments frozen in time, driven by a deep love for the environment.",
+  description: "Browse the photography gallery of Manish Singh Mahato — high-quality nature photos featuring everything from insects, landscapes, and earthy textures. Free HD wallpapers and visual storytelling rooted in environmental love.",
   keywords: [
     "Manish Singh Mahato",
     "Nature Photography",
@@ -21,25 +21,36 @@ export const metadata = {
     "Nature Gallery",
     "Manish Mahato Studio",
     "Personal Photography Archive",
+    "Photography Gallery",
+    "HD Wallpapers",
+    "Mountain Wallpapers",
+    "Free Image Gallery",
+    "Nepal Nature Photographer",
+    "Manish Mahato",
+    "Lightroom Edits",
+    "Personal Photography",
+    "Photography Archive",
+    "Wallpaper Download",
+    "Nepali Wallpapers",
   ],
   openGraph: {
-    title: "Studio | Photography by Manish Singh Mahato",
-    description: "Explore Manish Singh Mahato’s photography studio — a visual archive of his love for the environment, capturing moments in nature from insects to mountains.",
-    url: "https://www.manishmahato.info.np/studio",
-    siteName: "Manish Singh Mahato Studio",
+    title: "Gallery | Photography by Manish Singh Mahato",
+    description: "Explore the visual gallery of Manish Singh Mahato — stunning high-resolution images capturing Nepal’s nature, texture, and even a nature poetry",
+    url: "https://www.manishmahato.info.np/studio/gallery",
+    siteName: "Manish Singh Mahato Studio Gallery",
     images: [
       {
-        url: "/JPG_manish_circle.png",
+        url: "studio/gallery_homepage.png",
         width: 1200,
         height: 630,
-        alt: "Photography by Manish Singh Mahato",
+        alt: "Gallery preview - Manish Singh Mahato Photography",
       },
     ],
     locale: "en_US",
     type: "website",
   },
 
-  category: "Photography Portfolio",
+  category: "Photography Gallery",
   applicationName: "Manish Singh Mahato Photography",
   authors: [{ name: "Manish Singh Mahato", url: "https://www.manishmahato.info.np" }],
   creator: "Manish Singh Mahato",
@@ -49,6 +60,10 @@ export const metadata = {
     icon: "/JPG_manish_circle.png",
     shortcut: "/JPG_manish_circle.png",
     apple: "/JPG_manish_circle.png",
+  },
+
+  alternates: {
+    canonical: "https://www.manishmahato.info.np/studio/gallery",
   },
 
   robots: {

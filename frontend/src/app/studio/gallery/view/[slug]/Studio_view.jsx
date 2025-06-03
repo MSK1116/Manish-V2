@@ -30,12 +30,13 @@ const Studio_view = ({ image }) => {
 
           <article className=" md:max-w-[40%] w-full md:p-4 md:py-4 py-2">
             <h1 className=" md:text-2xl text-xl uppercase font-semibold text-gray-800 text-center md:text-left">{image.title}</h1>
-            <h2 className=" flex items-center justify-center md:justify-start text-sm text-gray-500 ">
+            <h2 className=" md:text-sm text-xs  uppercase font-medium text-gray-800/80 text-center md:text-left">{image.metaDescription}</h2>
+            <h3 className=" flex items-center justify-center md:justify-start text-sm text-gray-500 ">
               <span>
                 <FaLocationDot className=" text-red-600" />
               </span>
               {image.location}
-            </h2>
+            </h3>
 
             <blockquote className=" mt-10 space-y-5">
               <h3 className=" tracking-wide md:text-left text-center  ">{image.description}</h3>

@@ -7,19 +7,22 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
 
   title: "Studio | Photography by Manish Singh Mahato",
-  description: "A personal gallery by Manish Singh Mahato, capturing nature's beauty — from tiny insects to vast mountains. Explore moments frozen in time, driven by a deep love for the environment.",
+  description: "A personal gallery by Manish Singh Mahato, capturing nature's beauty — from tiny insects to earthy textures. Explore moments frozen in time, driven by a deep love for the environment.",
   keywords: [
     "Manish Singh Mahato",
     "Nature Photography",
     "Environmental Photography",
     "Nepal Photographer",
-    "Insect Photography",
+    "HD Image",
     "Mountain Photography",
-    "Wildlife Photography",
     "Photography Portfolio",
     "Nature Gallery",
     "Manish Mahato Studio",
+    "Free HD Wallpaper",
+    "Nepali Wallpaper",
     "Personal Photography Archive",
+    "Lightroom",
+    "Lightromm Editing",
   ],
   openGraph: {
     title: "Studio | Photography by Manish Singh Mahato",
@@ -28,7 +31,7 @@ export const metadata = {
     siteName: "Manish Singh Mahato Studio",
     images: [
       {
-        url: "/JPG_manish_circle.png",
+        url: "/studio/studio_homepage.png",
         width: 1200,
         height: 630,
         alt: "Photography by Manish Singh Mahato",
@@ -49,7 +52,9 @@ export const metadata = {
     shortcut: "/JPG_manish_circle.png",
     apple: "/JPG_manish_circle.png",
   },
-
+  alternates: {
+    canonical: "https://www.manishmahato.info.np/studio",
+  },
   robots: {
     index: true,
     follow: true,

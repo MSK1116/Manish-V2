@@ -70,7 +70,7 @@ const GooglePixel_mockup = ({ decreaseFactor, imageData }) => {
             height: scale(572),
             borderRadius: scale(12),
           }}>
-          <img src={`/studio/${imageData.link_low}`} className=" object-cover w-full h-full" style={{ width: scale(272), height: scale(572) }} alt="" />
+          <img src={`/studio/${imageData.link_low}`} className=" object-cover w-full h-full" style={{ width: scale(272), height: scale(572) }} alt={`Mobile mockup with wallpaper of ${imageData.metaDescription}`} />
           <div className=" absolute top-2 flex flex-col items-center  h-full w-full  text-white">
             <span className=" text-[6px]">
               {date.getHours() > 12 ? date.getHours() - 12 : date.getHours()} : {date.getMinutes()}

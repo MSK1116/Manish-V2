@@ -6,6 +6,7 @@ import { IoOpenOutline } from "react-icons/io5";
 import { LuMousePointerClick } from "react-icons/lu";
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const StudioGallery = ({ images }) => {
   const imageList = useMemo(() => {
@@ -113,7 +114,7 @@ const StudioGallery = ({ images }) => {
               <motion.div initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0 }} transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}>
                 <div className=" group/view-btn absolute cursor-pointer flex bottom-5 space-x-2 h-7 pr-4 text-sm w-fit bg-slate-300/80 rounded-r-md p-1 text-center">
                   <span> {imageList[click].title}</span>
-                  <button className=" overflow-hidden   relative" type="button">
+                  <Link href={`/studio/gallery/view/${imageList[click].slug}`} className=" overflow-hidden   relative" aria-label={`Click to view the image of ${imageList[click].metaDescription}`}>
                     <div className=" justify-center   size-full">
                       <div className=" group-hover/view-btn:translate-x-40  transition-all duration-700">
                         <LuMousePointerClick className=" size-5" />
@@ -122,7 +123,7 @@ const StudioGallery = ({ images }) => {
                         <IoOpenOutline className=" size-5" />
                       </div>
                     </div>
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             </motion.div>

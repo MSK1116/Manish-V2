@@ -6,20 +6,21 @@ import Studio_view2 from "./Studio_view2";
 
 export async function generateStaticParams() {
   return imageData.map((img) => ({
-    slug: img.id,
+    slug: img.slug,
   }));
 }
 
 export async function generateMetadata({ params }, parent) {
   const { slug } = await params;
-  const image = imageData.find((img) => img.id === slug);
+  const image = imageData.find((img) => img.slug === slug);
 
   if (!image) return { title: "Not Found" };
 
   const parentMeta = await parent;
 
   return {
-    title: `${image.title} | Manish Singh Mahato`,
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+    title: `${image.title} | Photograph by Manish Singh Mahato`,
     description: image.metaDescription,
     openGraph: {
       title: image.title,

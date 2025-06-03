@@ -89,35 +89,37 @@ const Studio_Image_details = ({ imageData }) => {
 
   return (
     <>
-      <dl className="-my-3 divide-y divide-gray-100 text-sm">
-        <div className="grid  p-1 grid-cols-3 gap-4">
-          <dt className="font-medium text-gray-900">Clicked on</dt>
-          <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.CreateDate : "Day ☀️"}</dd>
-        </div>
-        <div className="grid  p-1 grid-cols-3 gap-4">
-          <dt className="font-medium text-gray-900">File Type</dt>
-          <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.fileType : "N/A"}</dd>
-        </div>
-        <div className="grid  p-1 grid-cols-3 gap-4">
-          <dt className="font-medium text-gray-900">Dimensions</dt>
-          <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.resolution : "N/A"}</dd>
-        </div>
+      <article>
+        <dl className="-my-3 divide-y divide-gray-100 text-sm">
+          <div className="grid  p-1 grid-cols-3 gap-4">
+            <dt className="font-medium text-gray-900">Clicked on</dt>
+            <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.CreateDate : "Day ☀️"}</dd>
+          </div>
+          <div className="grid  p-1 grid-cols-3 gap-4">
+            <dt className="font-medium text-gray-900">File Type</dt>
+            <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.fileType : "N/A"}</dd>
+          </div>
+          <div className="grid  p-1 grid-cols-3 gap-4">
+            <dt className="font-medium text-gray-900">Dimensions</dt>
+            <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.resolution : "N/A"}</dd>
+          </div>
 
-        <div className="grid  p-1 grid-cols-3 gap-4">
-          <dt className="font-medium text-gray-900">Aperture</dt>
-          <dd className="text-gray-700 col-span-2">{imageDetails ? `f/${imageDetails.ApertureValue}` : "N/A"}</dd>
-        </div>
+          <div className="grid  p-1 grid-cols-3 gap-4">
+            <dt className="font-medium text-gray-900">Aperture</dt>
+            <dd className="text-gray-700 col-span-2">{imageDetails ? `f/${imageDetails.ApertureValue}` : "N/A"}</dd>
+          </div>
 
-        <div className="grid  p-1 grid-cols-3 gap-4">
-          <dt className="font-medium text-gray-900">Exposure</dt>
-          <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.exposureTime + " sec" : "N/A"}</dd>
-        </div>
+          <div className="grid  p-1 grid-cols-3 gap-4">
+            <dt className="font-medium text-gray-900">Exposure</dt>
+            <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.exposureTime + " sec" : "N/A"}</dd>
+          </div>
 
-        <div className="grid  p-1 grid-cols-3 gap-4">
-          <dt className="font-medium text-gray-900">Focal Length</dt>
-          <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.focalLength : "N/A"}</dd>
-        </div>
-      </dl>
+          <div className="grid  p-1 grid-cols-3 gap-4">
+            <dt className="font-medium text-gray-900">Focal Length</dt>
+            <dd className="text-gray-700 col-span-2">{imageDetails ? imageDetails.focalLength : "N/A"}</dd>
+          </div>
+        </dl>
+      </article>
     </>
   );
 };

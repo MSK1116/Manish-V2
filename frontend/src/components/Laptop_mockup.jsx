@@ -42,7 +42,7 @@ const Laptop_mockup = ({ decreaseFactor, imageData }) => {
               }}
               src={`/studio/${imageData.link_low}`}
               className="object-cover  w-full "
-              alt=""
+              alt={`Mock of Laptop with wallpaper of ${imageData.metaDescription}`}
             />
           </div>
         </div>

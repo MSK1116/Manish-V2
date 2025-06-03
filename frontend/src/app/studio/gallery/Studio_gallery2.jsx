@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { IoOpenOutline } from "react-icons/io5";
 import { LuMousePointerClick } from "react-icons/lu";
@@ -18,7 +19,7 @@ const Studio_gallery2 = ({ images }) => {
               <Image className=" rounded-md object-cover" placeholder="blur" fill={true} blurDataURL={arrangedImageList[0].base64} src={`/studio/${arrangedImageList[0].link}`} alt={arrangedImageList[0].metaDescription}></Image>
               <div data-aos="fade-right" data-aos-offset="-20" className=" group/view-btn absolute cursor-pointer flex bottom-5 space-x-2 h-7 pr-4 text-sm w-fit bg-slate-300/80 rounded-r-md p-1 text-center">
                 <span> {arrangedImageList[0].title}</span>
-                <button className=" overflow-hidden   relative" type="button">
+                <Link href={`/studio/gallery/view/${arrangedImageList[0].slug}`} className=" overflow-hidden   relative" aria-label={`Click to view the image of ${arrangedImageList[0].metaDescription}`}>
                   <div className=" justify-center   size-full">
                     <div className=" group-hover/view-btn:translate-x-40  transition-all duration-700">
                       <LuMousePointerClick className=" size-5" />
@@ -27,24 +28,26 @@ const Studio_gallery2 = ({ images }) => {
                       <IoOpenOutline className=" size-5" />
                     </div>
                   </div>
-                </button>
+                </Link>
               </div>
             </div>
             <div className=" md:w-[30%] w-full md:mt-0 mt-4 max-h-full flex justify-center items-center  px-2">
               <div className="  [column-fill:_balance] columns-2 space-y-5  ">
                 {arrangedImageList.slice(1, 5).map((images, index) => {
                   return (
-                    <div key={index} className="relative font-radio group/galleryDes hover:-translate-y-0.5 active:scale-95 cursor-pointer overflow-hidden   transition-all duration-500 ">
-                      <Image
-                        width={800}
-                        height={1100}
-                        className="w-full h-auto object-cover rounded-md "
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        src={`/studio/${images.link_low}`}
-                        blurDataURL={images.base64}
-                        placeholder="blur"
-                        alt={images.metaDescription}></Image>
-                      <div className=" h-fit px-3 md:translate-y-20 md:group-hover/galleryDes:translate-y-0 transition-all duration-500 absolute w-full bottom-0 text-sm text-nowrap truncate bg-gray-200/75">{images.title}</div>
+                    <div key={index} className="font-radio group/galleryDes hover:-translate-y-0.5 active:scale-95 cursor-pointer overflow-hidden   transition-all duration-500 ">
+                      <Link href={`/studio/gallery/view/${images.slug}`} aria-label={`Click to view the image of ${images.metaDescription}`} className=" relative ">
+                        <Image
+                          width={800}
+                          height={1100}
+                          className="w-full h-auto object-cover rounded-md "
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                          src={`/studio/${images.link_low}`}
+                          blurDataURL={images.base64}
+                          placeholder="blur"
+                          alt={images.metaDescription}></Image>
+                        <div className=" h-fit px-3 md:translate-y-20 md:group-hover/galleryDes:translate-y-0 transition-all duration-500 absolute w-full bottom-0 text-sm text-nowrap truncate bg-gray-200/75">{images.title}</div>
+                      </Link>
                     </div>
                   );
                 })}

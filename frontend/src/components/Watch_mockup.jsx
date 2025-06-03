@@ -17,7 +17,7 @@ const Watch_mockup = ({ decreaseFactor, imageData }) => {
             <div style={{ width: scale(6), insetInlineEnd: scale(-16), height: scale(41), top: scale(40), borderStartEndRadius: scale(8), borderEndEndRadius: scale(8) }} className=" bg-gray-800  absolute  "></div>
             <div style={{ width: scale(6), insetInlineEnd: scale(-16), height: scale(32), top: scale(88), borderStartEndRadius: scale(8), borderEndEndRadius: scale(8) }} className="  bg-gray-800  absolute  "></div>
             <div style={{ borderRadius: scale(32), height: scale(193), width: scale(188) }} className="overflow-hidden relative ">
-              <img style={{ height: scale(193), width: scale(188) }} src={`/studio/${imageData.link_low}`} className="object-cover" alt="" />
+              <img style={{ height: scale(193), width: scale(188) }} src={`/studio/${imageData.link_low}`} className="object-cover" alt={`Smartwatch mockup with wallpaper of ${imageData.metaDescription}`} />
               <div className=" absolute top-2 flex flex-col items-center  h-full w-full  text-white">
                 <span className=" text-[6px]">
                   {date.getHours() > 12 ? date.getHours() - 12 : date.getHours()} : {date.getMinutes()}
