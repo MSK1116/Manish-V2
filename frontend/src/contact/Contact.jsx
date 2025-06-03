@@ -113,6 +113,7 @@ const Contact = () => {
                         render={({ field: { onChange, value } }) => (
                           <div className="  ">
                             <PhoneInput
+                              countrySelectProps={{ unicodeFlags: true }}
                               placeholder="+977 9812055XX"
                               value={value}
                               onChange={onChange}

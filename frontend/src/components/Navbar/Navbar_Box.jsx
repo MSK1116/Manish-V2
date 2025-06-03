@@ -126,7 +126,7 @@ const Navbar_Box = () => {
           </EasterEggProvider>
           <div>
             <ul className="hidden md:flex flex-row gap-x-8  text-gray-900">{checkPath ? navList2 : navList}</ul>
-            <div className="md:hidden" onClick={() => setMenu(!menu)}>
+            <div className="md:hidden active:scale-95" onClick={() => setMenu(!menu)}>
               {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
             </div>
           </div>
