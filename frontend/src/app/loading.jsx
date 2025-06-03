@@ -1,6 +1,6 @@
 import React from "react";
 
-const Loading = () => {
+export default function Loading() {
   return (
     <>
       <div name="Home" className="w-full overflow-hidden px-4 md:px-20 mt-20 md:h-screen xl:h-[80vh] h-full pb-3 animate-pulse">
@@ -220,6 +220,4 @@ const Loading = () => {
       </div>
     </>
   );
-};
-
-export default Loading;
+}
