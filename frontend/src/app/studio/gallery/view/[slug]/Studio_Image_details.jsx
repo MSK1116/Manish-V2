@@ -3,7 +3,15 @@ import React, { useEffect, useState } from "react";
 import ExifReader from "exifreader";
 
 const Studio_Image_details = ({ imageData }) => {
-  const [imageDetails, setImageDetails] = useState(null);
+  const [imageDetails, setImageDetails] = useState({
+    resolution: "Loading...",
+    fileType: "Loading...",
+    focalLength: "Loading...",
+    exposureTime: "Loading...",
+    ApertureValue: "Loading...",
+    ISOSpeedRatings: "Loading...",
+    CreateDate: "Loading...",
+  });
 
   useEffect(() => {
     if (imageData) {
