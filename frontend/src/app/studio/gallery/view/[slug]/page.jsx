@@ -24,11 +24,11 @@ export async function generateMetadata({ params }, parent) {
     description: image.metaDescription,
     openGraph: {
       title: image.title,
-      description: image.description,
-      url: `${process.env.NEXT_PUBLIC_SITE_URL}/studio/gallery/view/${image.slug}`,
+      description: image.metaDescription,
+      url: `https://www.manishmahato.info.np/studio/gallery/view/${image.slug}`,
       images: [
         {
-          url: `/studio/gallery/view/${image.link}`,
+          url: `/studio/gallery/view/${image.link_low}`,
           width: 1200,
           height: 800,
           alt: image.title,
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }, parent) {
       ],
     },
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_SITE_URL}/studio/gallery/view/${image.slug}`,
+      canonical: `https://www.manishmahato.info.np/studio/gallery/view/${image.slug}`,
     },
   };
 }
