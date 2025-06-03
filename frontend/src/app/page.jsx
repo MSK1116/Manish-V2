@@ -3,7 +3,7 @@ import Home_banner from "@/Home/Home_banner";
 import About from "@/About/About";
 import Award from "@/Award/Award";
 import Project from "@/Project/Project";
-// import Contact from "@/contact/Contact";
+import Contact from "@/contact/Contact";
 
 const page = () => {
   return (
@@ -12,7 +12,7 @@ const page = () => {
       <About />
       <Award />
       <Project />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 };
