@@ -44,7 +44,7 @@ const Studio_gallery4 = async ({ images }) => {
             </h5>
             <div className=" flex flex-col md:flex-row w-fit md:gap-x-6 gap-3">
               <Link
-                href={"/studio/gallery"}
+                href={"/#contact"}
                 aria-label="Click this to go to the Contact page so you reach me"
                 data-aos="zoom-in-up"
                 className=" group/btn select-none active:scale-95 overflow-hidden w-44 px-4 py-2  cursor-pointer flex items-center justify-center relative mx-auto  bg-gray-300 space-x-2">
@@ -58,7 +58,7 @@ const Studio_gallery4 = async ({ images }) => {
               </div>
               <Link
                 aria-label="Click this to go to the Volunteer page so you can support this page"
-                href={"/studio/gallery"}
+                href={"/studio/volunteer"}
                 data-aos="zoom-in-up"
                 className=" group/btn select-none active:scale-95 overflow-hidden w-52 px-4 py-2  cursor-pointer flex items-center justify-center relative mx-auto  bg-gray-300 space-x-2">
                 <div className=" absolute inset-0 p-1 w-fit flex items-center justify-center md:-translate-x-16 md:group-hover/btn:translate-x-0 transition-all duration-300 ">

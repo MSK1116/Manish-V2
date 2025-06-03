@@ -45,7 +45,7 @@ export async function generateMetadata({ params }, parent) {
 export default async function Page({ params }) {
   const { slug } = await params;
 
-  const image = imageData.find((img) => img.id === slug);
+  const image = imageData.find((img) => img.slug === slug);
   console.log(slug);
   if (!image) return notFound();
 

@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <>
-      <div name="Contact" className=" w-full overflow-hidden  bg-white relative  pt-0">
+      <div name="Contact" id="contact" className=" w-full overflow-hidden  bg-white relative  pt-0">
         <div
           className="flex flex-col items-center justify-between pt-0 pr-10 pb-0 pl-10 mt-0 mr-auto mb-0 ml-auto max-w-7xl
       xl:px-5 lg:flex-row">
