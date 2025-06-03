@@ -75,6 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="light">
       <head>
+        <meta name="google-adsense-account" content="ca-pub-9494024234731058"></meta>
         <Script
           id="structured-data"
           type="application/ld+json"
@@ -105,6 +106,17 @@ export default function RootLayout({
               knowsAbout: ["Photography", "Lightroom", "Coding", "HTML & CSS", "Web Development"],
               sameAs: ["https://www.facebook.com/manu0519/", "https://www.linkedin.com/in/manu0519", "https://www.instagram.com/manishsingh0519/"],
             }),
+          }}
+        />
+        <Script
+          id="clarity-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: ` (function(c,l,a,r,i,t,y){
+         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+         })(window, document, "clarity", "script", "mtc9m2c1sz");`,
           }}
         />
       </head>
