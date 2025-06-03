@@ -19,7 +19,7 @@ const Studio_view2 = ({ image }) => {
             <Studio_Image_detail imageData={image} />
           </div>
           <div className=" flex w-fit items-center space-x-4 mt-4">
-            <a aria-label="Click it to download the image in original high quality in your device" href={`/studio/${image.link}`} download={image.title + " by Studio | Manish Singh Mahato"}>
+            <a aria-label="Click it to download the image in original high quality in your device" href={`/studio/${image.link}`} download={`${image.title} by Manish Singh Mahato's Studios (${image.metaDescription}) `}>
               <button className=" active:scale-95 overflow-hidden bg-gray-300  px-3 py-2 rounded-md group/download-btn  relative" type="button">
                 <div className=" justify-center size-full">
                   <h4 className=" group-hover/download-btn:translate-x-40 text-sm transition-all duration-700">Download</h4>
@@ -27,14 +27,14 @@ const Studio_view2 = ({ image }) => {
                 </div>
               </button>
             </a>
-            <a className=" active:scale-95" aria-label="Share this image via Facebook" target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.manishmahato.info.np/studio/view/${image.title}`}>
+            <a className=" active:scale-95" aria-label="Share this image via Facebook" target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=https://www.manishmahato.info.np/studio/gallery/view/${image.slug}`}>
               <FaFacebook className="size-7 text-[#3B5998]" />
             </a>
-            <a className=" active:scale-95" target="_blank" aria-label="Share and message this image via WhatsApp" href={`https://api.whatsapp.com/send?text=Check+this+out:+https://www.manishmahato.info.np/studio/view/${image.title}`}>
+            <a className=" active:scale-95" target="_blank" aria-label="Share and message this image via WhatsApp" href={`https://api.whatsapp.com/send?text=Check+this+out:+https://www.manishmahato.info.np/studio/gallery/view/${image.slug}`}>
               <FaWhatsapp className="size-7 text-[#128C7E]" />
             </a>
             <div aria-label="Copy link of this image to clipboard">
-              <Studio_clipboard link={image.link} />
+              <Studio_clipboard slug={image.slug} />
             </div>
           </div>
         </div>

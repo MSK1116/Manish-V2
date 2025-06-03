@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { FaClipboardCheck, FaClipboardList } from "react-icons/fa";
 
-const Studio_clipboard = ({ link }) => {
+const Studio_clipboard = ({ slug }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(link);
+      await navigator.clipboard.writeText(`https://www.manishmahato.info.np/studio/gallery/view/${slug}`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
