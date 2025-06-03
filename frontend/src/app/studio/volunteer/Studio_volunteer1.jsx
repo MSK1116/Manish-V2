@@ -8,11 +8,11 @@ const Studio_volunteer1 = () => {
     <>
       <div className=" relative md:h-screen md:flex font-lora  items-center md:p-8 p-3 w-full bg-gray-50">
         <div className="p-4 md:w-1/2 h-auto mt-20 md:mt-1  max-h-fit ">
-          <p data-aos="fade-down" className="text-xl text-gray-800 font-thin text-center cursor-default">
+          <h1 data-aos="fade-down" className="text-xl text-gray-800 font-thin text-center cursor-default">
             <span className=" hover:animate-pulse   font-bold text-blue-700 tracking-wide">Contributing</span>, <span className=" tracking-wide hover:animate-pulse font-bold text-red-600">donating</span>, and{" "}
             <span className=" tracking-wide hover:animate-pulse font-bold text-yellow-500 ">collaborating</span> are like threads in a communal tapestry—each person adds their unique color, giving selflessly, guiding the pattern, and weaving together
             a masterpiece that no one could create alone.
-          </p>
+          </h1>
         </div>
         <div className=" overflow-hidden md:relative md:w-1/2 w-full h-full ">
           <Image alt="Image of two people sharing camera and teaching each other" className=" object-cover hidden md:block " data-aos="fade-left" data-aos-duration="1000" src="/studio/clipart/Mcamera4.png" fill={true}></Image>
@@ -47,7 +47,11 @@ const Studio_volunteer1 = () => {
                   type="file"
                   className=" file:rounded-md file:px-3 file:py-1 file:bg-blue-600   w-full border border-gray-200 p-3 outline-none focus:border-blue-600 focus:border rounded-md "></input>
               </div>
-              <button type="button" data-aos="zoom-in-up" className=" group/btn select-none active:scale-95 overflow-hidden w-40 px-4 py-2  cursor-pointer flex items-center justify-center relative  mx-auto bg-gray-300">
+              <button
+                aria-label="Click to submit the form"
+                type="button"
+                data-aos="zoom-in-up"
+                className=" group/btn select-none active:scale-95 overflow-hidden w-40 px-4 py-2  cursor-pointer flex items-center justify-center relative  mx-auto bg-gray-300">
                 <div className=" absolute inset-0 p-1 w-fit flex items-center justify-center -translate-x-16 group-hover/btn:translate-x-0 transition-all duration-300 ">
                   <IoIosArrowDropright className=" size-6" />
                 </div>

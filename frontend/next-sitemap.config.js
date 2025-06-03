@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-// Recursively find static routes in /src/app (adjust if needed)
+// Recursively find static routes
 function findStaticRoutes(baseDir, parent = "") {
   const entries = fs.readdirSync(path.join(baseDir, parent));
   let routes = [];
@@ -22,9 +22,17 @@ function findStaticRoutes(baseDir, parent = "") {
   return routes;
 }
 
-// Adjust this path if your app/ folder is elsewhere
-const appDir = path.join(__dirname, "src", "app"); // or just "app" if not in src/
+const appDir = path.join(__dirname, "src", "app");
 const staticRoutes = findStaticRoutes(appDir);
+
+// ✅ Load dynamic slugs from your JSON
+const imageData = require("./public/studio/img.json");
+const dynamicRoutes = imageData.map((img) => ({
+  loc: `/studio/gallery/view/${img.slug}`,
+  changefreq: "weekly",
+  priority: 0.7,
+  lastmod: new Date().toISOString(),
+}));
 
 module.exports = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://www.manishmahato.info.np",
@@ -32,11 +40,13 @@ module.exports = {
   generateIndexSitemap: true,
 
   additionalPaths: async () => {
-    return staticRoutes.map((route) => ({
+    const staticPaths = staticRoutes.map((route) => ({
       loc: route,
       changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date().toISOString(),
     }));
+
+    return [...staticPaths, ...dynamicRoutes];
   },
 };
