@@ -8,6 +8,7 @@ const ProjectsCard = async ({ items }) => {
   const pixelateImg1 = await pixelateImageToBase64(`./public/proj/${items.img1}`);
   const pixelateImg2 = await pixelateImageToBase64(`./public/proj/${items.img2}`);
   const pixelateImg3 = await pixelateImageToBase64(`./public/proj/${items.img3}`);
+
   return (
     <>
       <input type="checkbox" id={items.id} className="modal-toggle" />
@@ -100,14 +101,32 @@ const ProjectsCard = async ({ items }) => {
                     fill={true}
                     className="object-cover object-center  hover:rotate-1 hover:scale-105 transition-all duration-300"
                     src={`/proj/${items.img1}`}
-                    alt={" first image of" + items.title}></Image>
+                    alt={" first image of" + items.title}
+                    unoptimized={items.img1.toLowerCase().endsWith(".gif")}></Image>
+                  {}
                 </div>
                 <div className="h-64  border border-gray-100 overflow-hidden">
                   <div className=" relative h-32 w-full">
-                    <Image placeholder="blur" blurDataURL={pixelateImg2} className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img2}`} alt={" second image of" + items.title} fill={true} />
+                    <Image
+                      unoptimized={items.img2.toLowerCase().endsWith(".gif")}
+                      placeholder="blur"
+                      blurDataURL={pixelateImg2}
+                      className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 "
+                      src={`/proj/${items.img2}`}
+                      alt={" second image of" + items.title}
+                      fill={true}
+                    />
                   </div>
                   <div className=" relative h-32 w-full">
-                    <Image placeholder="blur" blurDataURL={pixelateImg3} className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 " src={`/proj/${items.img3}`} alt={" third image of" + items.title} fill={true} />
+                    <Image
+                      unoptimized={items.img3.toLowerCase().endsWith(".gif")}
+                      placeholder="blur"
+                      blurDataURL={pixelateImg3}
+                      className="object-cover hover:rotate-1 hover:scale-105 transition-all duration-300 "
+                      src={`/proj/${items.img3}`}
+                      alt={" third image of" + items.title}
+                      fill={true}
+                    />
                   </div>
                 </div>
               </div>
