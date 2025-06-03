@@ -70,11 +70,11 @@ const Studio_Image_details = ({ imageData }) => {
           setImageDetails({
             resolution: 0,
 
-            fileType: "N/A",
-            focalLength: "N/A",
-            exposureTime: "N/A",
-            ApertureValue: "N/A",
-            ISOSpeedRatings: "N/A",
+            fileType: "Image",
+            focalLength: "A good focal length😉",
+            exposureTime: "Till it got shy.😳",
+            ApertureValue: "Wide open😁",
+            ISOSpeedRatings: "🚀",
             CreateDate: "Day ☀️",
           });
         });
