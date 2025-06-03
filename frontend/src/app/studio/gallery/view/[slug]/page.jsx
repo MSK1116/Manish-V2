@@ -10,11 +10,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params }, parent) {
   const { slug } = await params;
   const image = imageData.find((img) => img.slug === slug);
 
   if (!image) return { title: "Not Found" };
+
+  const parentMeta = await parent;
 
   return {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
@@ -26,11 +28,12 @@ export async function generateMetadata({ params }) {
       url: `https://www.manishmahato.info.np/studio/gallery/view/${image.slug}`,
       images: [
         {
-          url: `/studio/gallery/view/${image.link_low}`,
+          url: `/studio/${image.link_low}`,
           width: 1200,
           height: 800,
-          alt: image.title,
+          alt: image.metaDescription,
         },
+        ...(parentMeta?.openGraph?.images || []),
       ],
     },
     alternates: {
