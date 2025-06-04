@@ -30,6 +30,12 @@ export async function generateMetadata({ params }) {
           height: 800,
           alt: image.metaDescription,
         },
+        {
+          url: `/studio/${image.link}`,
+          width: 1200,
+          height: 800,
+          alt: image.metaDescription,
+        },
       ],
     },
     alternates: {
