@@ -22,8 +22,8 @@ const Studio_view2 = ({ image }) => {
             <a aria-label="Click it to download the image in original high quality in your device" href={`/studio/${image.link}`} download={`${image.title} by Manish Singh Mahato's Studios (${image.metaDescription}) `}>
               <button className=" active:scale-95 overflow-hidden bg-gray-300  px-3 py-2 rounded-md group/download-btn  relative" type="button">
                 <div className=" justify-center size-full">
-                  <h4 className=" group-hover/download-btn:translate-x-40 text-sm transition-all duration-700">Download</h4>
-                  <div className=" -translate-x-32 group-hover/download-btn:translate-x-0 absolute flex inset-0  items-center justify-center z-10 transition-all duration-500">⬇️</div>
+                  <h4 className=" group-hover/download-btn:translate-y-40 text-sm transition-all duration-700">Download</h4>
+                  <div className=" -translate-y-32 group-hover/download-btn:translate-y-0 absolute flex inset-0  items-center justify-center z-10 transition-all duration-500">⬇️</div>
                 </div>
               </button>
             </a>
