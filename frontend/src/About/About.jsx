@@ -38,7 +38,7 @@ const About = async () => {
                   </li>
 
                   <li data-aos="fade-right" data-aos-duration="700" data-aos-offset="-5">
-                    10 th :Secondary Education Examination (SEE)<br></br> GPA: 3.55<br></br> Gamvir Samudra Setu Secondary School- Imadol, Lalitpur
+                    10 th :Secondary Education Examination (SEE)<br></br> GPA: 3.55<br></br>Shree Gamvir Samudra Setu Secondary School- Imadol, Lalitpur
                     <span className="flex items-center mt-5">
                       <span className="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></span>
                       <span className="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></span>
@@ -89,7 +89,7 @@ const About = async () => {
                       image: "https://www.gamvirss.edu.np/web/LogoNoBg.png",
                       alt: "Gamvir SS Logo",
                       title: "Website Developer at",
-                      subtitle: "Gamvir Samudra Setu Secondary School - Imadol, Lalitpur",
+                      subtitle: "Shree Gamvir Samudra Setu Secondary School - Imadol, Lalitpur",
                     },
                   ].map((item, index, arr) => (
                     <li key={index} data-aos="fade-right" data-aos-duration="700" data-aos-offset="-5">
