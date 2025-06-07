@@ -34,7 +34,7 @@ const StudioGallery = ({ images }) => {
   };
   return (
     <>
-      <section className=" max-w-screen-2xl  w-full  h-auto">
+      <section className="  w-full  h-auto overflow-hidden">
         <div className=" relative md:h-screen h-[80vh] w-full  overflow-hidden">
           <div className=" absolute size-[89%]  -bottom-36 md:-right-[37%] -right-[30%]  z-20  ">
             <Svg_splash />
