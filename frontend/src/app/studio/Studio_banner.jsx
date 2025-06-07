@@ -23,7 +23,7 @@ const Studio_banner = ({ pixelImg }) => {
               Moments fade, but memories don’t have to.
             </h2>
           </div>
-          <div data-aos="fade-left" data-aos-duration="700" className="md:w-1/2 w-full h-[45vh] md:h-auto md:px-8 md:py-0 py-2 flex justify-end md:mr-10">
+          <div data-aos="fade-left" data-aos-duration="700" className="md:w-1/2 w-full h-full md:h-auto md:px-8 md:py-0 py-2 flex justify-end md:mr-10">
             <VerticalMarquee />
           </div>
         </div>
