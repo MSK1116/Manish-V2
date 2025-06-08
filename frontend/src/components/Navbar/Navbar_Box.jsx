@@ -119,7 +119,7 @@ const Navbar_Box = () => {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <nav className={` w-full rounded-sm px-4 md:px-20 h-16 shadow-lg fixed top-0 left-0 right-0 z-50 transition-colors duration-500 bg-slate-50/75 ${sticky ? " bg-slate-200" : ""} `}>
+      <nav className={` fixed  px-4 md:px-20 h-16 shadow-lg z-50 transition-all duration-300 bg-slate-50/75 left-1/2 -translate-x-1/2 ${sticky ? " bg-slate-200 top-0 w-full rounded-sm " : "top-5 w-[95%]"} rounded-2xl `}>
         <div className=" flex justify-between items-center h-16 ">
           <EasterEggProvider>
             <Navbar_ProfilePic subtitle={checkPath ? "STUDIO" : "Web Portfolio"} />

@@ -30,7 +30,6 @@ const Award = async () => {
             <div data-aos="zoom-in-up" data-aos-duration="1000" className=" w-screen md:w-1/3 px-4 mr-auto ml-auto">
               <div className=" flex flex-col break-words bg-slate-50  w-full mb-6 shadow-lg rounded-lg ">
                 <Image placeholder="blur" blurDataURL={pixelatedOfManish} className=" object-cover rounded-t-md" width={1280} height={1920} src={"/IMG_6108.jpg"} alt="Manish's NASA SPACE APP"></Image>
-
                 <blockquote data-aos-delay="700" className="relative p-8 mb-4  bg-slate-50 ">
                   <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block h-[95px] z-10 -top-[94px] ">
                     <polygon points="-30,95 583,95 583,65" className=" text-blue-700 fill-current "></polygon>

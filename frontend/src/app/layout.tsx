@@ -4,6 +4,8 @@ import Navbar_Box from "@/components/Navbar/Navbar_Box";
 import AosInitializer from "@/components/AosInitializer";
 import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
+import { EasterEggProvider } from "@/components/EasterEggContext";
+import Easteregg from "@/components/Easteregg";
 
 const radioCanadaBig = Radio_Canada_Big({
   subsets: ["latin"],
@@ -125,6 +127,9 @@ export default function RootLayout({
         {children}
         <Footer />
         <AosInitializer />
+        <EasterEggProvider>
+          <Easteregg />
+        </EasterEggProvider>
       </body>
     </html>
   );

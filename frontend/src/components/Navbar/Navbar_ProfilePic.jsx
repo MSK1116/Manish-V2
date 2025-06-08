@@ -82,7 +82,6 @@ const Navbar_ProfilePic = ({ subtitle }) => {
           {stickMan1 && <img className={` ${stickMan1Walking ? " -translate-x-96  " : "translate-x-0  "} ease-linear transition-all duration-[9000ms] object-contain `} src="/clipart/strokManWalking.gif"></img>}
         </div>
       </div>
-      <Easteregg />
     </>
   );
 };
