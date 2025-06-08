@@ -16,10 +16,10 @@ const Studio_gallery2 = ({ images }) => {
         <div className="h-[80vh] mt-5">
           <div className=" flex md:flex-row h-full flex-col py-4 ">
             <div className="md:w-[70%] w-full overflow-hidden h-full relative ">
-              <Image className=" rounded-md object-cover" placeholder="blur" fill={true} blurDataURL={arrangedImageList[1].base64} src={`/studio/${arrangedImageList[1].link}`} alt={arrangedImageList[1].metaDescription}></Image>
+              <Image className=" rounded-md object-cover" placeholder="blur" fill={true} blurDataURL={arrangedImageList[2].base64} src={`/studio/${arrangedImageList[2].link}`} alt={arrangedImageList[2].metaDescription}></Image>
               <div data-aos="fade-right" data-aos-offset="-20" className=" group/view-btn absolute cursor-pointer flex bottom-5 space-x-2 h-7 pr-4 text-sm w-fit bg-slate-300/80 rounded-r-md p-1 text-center">
-                <span> {arrangedImageList[1].title}</span>
-                <Link href={`/studio/gallery/view/${arrangedImageList[1].slug}`} className=" overflow-hidden   relative" aria-label={`Click to view the image of ${arrangedImageList[1].metaDescription}`}>
+                <span> {arrangedImageList[2].title}</span>
+                <Link href={`/studio/gallery/view/${arrangedImageList[2].slug}`} className=" overflow-hidden   relative" aria-label={`Click to view the image of ${arrangedImageList[2].metaDescription}`}>
                   <div className=" justify-center   size-full">
                     <div className=" group-hover/view-btn:translate-x-40  transition-all duration-700">
                       <LuMousePointerClick className=" size-5" />
@@ -34,7 +34,7 @@ const Studio_gallery2 = ({ images }) => {
             <div className=" md:w-[30%] w-full md:mt-0 mt-4 max-h-full flex justify-center items-center  px-2">
               <div className="  [column-fill:_balance] columns-2 space-y-5  ">
                 {arrangedImageList.slice(0, 5).map((images, index) => {
-                  if (index == 1) return null;
+                  if (index == 2) return null;
                   return (
                     <div key={index} className="font-radio group/galleryDes hover:-translate-y-0.5 active:scale-95 cursor-pointer overflow-hidden   transition-all duration-500 ">
                       <Link href={`/studio/gallery/view/${images.slug}`} aria-label={`Click to view the image of ${images.metaDescription}`} className=" relative ">

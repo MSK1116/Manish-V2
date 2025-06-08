@@ -12,8 +12,8 @@ const Studio_gallery4 = async ({ images }) => {
         <h3 className=" text-xl font-medium text-center md:text-left">In the details, in the patterns, in the randomness that feels just right</h3>
         <h4 className=" text-center md:text-left">Here are some of my favorites. Moments I keep coming back to...</h4>
         <div className="[column-fill:_balance] group h-full md:columns-5 columns-2 space-y-5 ">
-          {images.slice(1, Math.min(16, images.length)).map((images, index) => {
-            if (index == 2) {
+          {images.slice(1, Math.min(20, images.length)).map((images, index) => {
+            if (index == 100) {
               return null;
             }
             return (
