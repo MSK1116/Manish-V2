@@ -29,7 +29,7 @@ const Navbar_Box = () => {
   }, []);
   const navList = (
     <>
-      <li className="hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200  cursor-pointer  ">
+      <li className=" active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200  cursor-pointer  ">
         <Link
           className="relative  after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0"
           to="Home"
@@ -41,7 +41,7 @@ const Navbar_Box = () => {
           Home
         </Link>
       </li>
-      <li className="hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
+      <li className=" active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
         <Link
           className="relative after:content-[''] after:w-0 after:origin-left   hover:after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0"
           to="About"
@@ -54,7 +54,7 @@ const Navbar_Box = () => {
           About
         </Link>
       </li>
-      <li className="hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
+      <li className=" active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
         <Link
           className="relative after:content-[''] after:w-0 after:origin-left   hover:after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0"
           to="Award"
@@ -67,8 +67,20 @@ const Navbar_Box = () => {
           Participation
         </Link>
       </li>
-
-      <li className="hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
+      <li className=" active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
+        <Link
+          className="relative after:content-[''] after:w-0 after:origin-left   hover:after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0"
+          to="Projects"
+          smooth={true}
+          offset={-70}
+          duration={500}
+          spy={true}
+          activeClass={"text-red-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0"}>
+          {" "}
+          Projects
+        </Link>
+      </li>
+      <li className=" active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
         <Link
           className="relative after:content-[''] after:w-0 after:origin-left   hover:after:w-full after:top-full after:h-1 after:absolute after:bg-red-700 after:transition-all after:duration-700 after:rounded-full after:left-0"
           to="Contact"
@@ -81,7 +93,7 @@ const Navbar_Box = () => {
           Contact
         </Link>
       </li>
-      <li className="hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
+      <li className=" active:-translate-y-[2px] active:scale-110 select-none  transition-all duration-200 cursor-pointer">
         <NextLink
           aria-label="Click to visit studio page"
           href="/studio"
@@ -99,19 +111,19 @@ const Navbar_Box = () => {
       <li
         className={` ${
           pathname == "/studio" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
-        } hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
+        }  active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
         <NextLink href={"/studio"}>Home</NextLink>
       </li>
       <li
         className={` ${
           pathname == "/studio/gallery" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
-        } hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
+        }  active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
         <NextLink href={"/studio/gallery"}>Gallery </NextLink>
       </li>
       <li
         className={` ${
           pathname == "/studio/volunteer" ? "text-blue-700 after:content-[''] after:origin-left after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0" : ""
-        } hover:scale-105 active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
+        }  active:-translate-y-[2px] active:scale-110 select-none transition-all duration-300 relative after:content-[''] after:origin-left after:w-0 hover:after:w-full after:top-full after:h-1 after:absolute after:bg-blue-700 after:transition-all after:duration-700 after:rounded-full after:left-0 cursor-pointer `}>
         <NextLink href={"/studio/volunteer"}> Volunteer</NextLink>
       </li>
     </>
