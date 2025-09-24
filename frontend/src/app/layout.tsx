@@ -88,7 +88,7 @@ export default function RootLayout({
               "@id": "https://www.manishmahato.info.np/#manish",
               name: "Manish Singh Mahato",
               url: "https://www.manishmahato.info.np/",
-              image: "https://www.manishmahato.info.np/MSK.jpg", // Ideally a profile image
+              image: "https://www.manishmahato.info.np/MSK.jpg",
               jobTitle: "Photographer",
               address: {
                 "@type": "PostalAddress",

@@ -1,13 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Award_cat from "./Award_cat";
-import { GiPodiumSecond } from "react-icons/gi";
-import { FaHandsBubbles } from "react-icons/fa6";
-
-import { FaMicrophoneAlt } from "react-icons/fa";
-import { SiNasa } from "react-icons/si";
 import { EasterEggProvider } from "@/components/EasterEggContext";
 import { pixelateImageToBase64 } from "@/lib/pixelate";
+import Awards_swiper from "@/Award/Awards_swiper";
 
 const Award = async () => {
   const pixelatedOfManish = await pixelateImageToBase64("./public//IMG_6108.jpg");
@@ -47,46 +43,8 @@ const Award = async () => {
               </div>
             </div>
 
-            <div className="w-full md:w-6/12 px-4">
-              <div className=" grid md:grid-cols-2 md:grid-rows-2 gap-3">
-                <div data-aos="zoom-in-right" className="px-4 py-5 flex-auto rounded-md bg-slate-50 hover:bg-slate-100 cursor-default ">
-                  <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                    <GiPodiumSecond className="w-6 h-6" />
-                  </div>
-                  <h5 className="text-xl mb-1 font-semibold"> EEPEX-24</h5>
-                  <p className="mb-4 text-left">
-                    2<sup>nd</sup> position in Project Exhibition at EEPEX 24<br></br> Organized by SEEE , Kathmandu University
-                  </p>
-                </div>
-
-                <div data-aos="zoom-in-right" className="relative flex flex-col min-w-0 rounded-md bg-slate-50 hover:bg-slate-100 cursor-default ">
-                  <div className="px-4 py-5 flex-auto">
-                    <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                      <FaHandsBubbles className="w-6 h-6" />
-                    </div>
-                    <h5 className="text-xl mb-1 font-semibold"> MechTRIX- 2079 & 2080</h5>
-                    <p className="mb-4 ">Participated in MechTRIX-2079 & 2080 Organized by SOMAES, The Institute of Engineering (IOE), Pulchowk </p>
-                  </div>
-                </div>
-                <div data-aos="zoom-in-left" aos-data-duration="1000" className="relative  flex flex-col min-w-0 rounded-md bg-slate-50 hover:bg-slate-100 cursor-default ">
-                  <div className="px-4 py-5 flex-auto">
-                    <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                      <SiNasa className="w-6 h-6" />
-                    </div>
-                    <h5 className="text-xl mb-1 font-semibold">Space Apps Challenge</h5>
-                    <p className="mb-4 ">People's Choice Awards-2024 for developing Agrowtik with aim to minimize global agricultural waste.</p>
-                  </div>
-                </div>
-                <div data-aos="zoom-in-left" aos-data-duration="1000" className="relative flex flex-col min-w-0  rounded-md  bg-slate-50 hover:bg-slate-100 cursor-default ">
-                  <div className="px-4 py-5 flex-auto">
-                    <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
-                      <FaMicrophoneAlt className="w-6 h-6" />
-                    </div>
-                    <h5 className="text-xl mb-1 font-semibold">ISA</h5>
-                    <p className="mb-4 "> Best Speaker of Speech Competition Organized by International School Award (ISA)</p>
-                  </div>
-                </div>
-              </div>
+            <div className="w-full md:w-6/12 px-4 group ">
+              <Awards_swiper />
             </div>
           </div>
         </div>

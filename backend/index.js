@@ -28,7 +28,7 @@ app.options("*", cors());
 app.use(express.json());
 dotenv.config();
 
-const port = process.env.port || 3000;
+const port = process.env.port || 3001;
 const MONGODBURI = process.env.MONGODBURI;
 
 mongoose

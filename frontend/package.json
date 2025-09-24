@@ -18,7 +18,7 @@
     "image-size": "^2.0.2",
     "masonry-layout": "^4.2.2",
     "motion": "^12.15.0",
-    "next": "15.3.3",
+    "next": "^15.5.4",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.5.4",
     "react": "^19.0.0",
@@ -29,6 +29,7 @@
     "react-scroll-trigger": "^0.6.14",
     "react-typed": "^2.0.12",
     "sharp": "^0.34.2",
+    "swiper": "^12.0.2",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
