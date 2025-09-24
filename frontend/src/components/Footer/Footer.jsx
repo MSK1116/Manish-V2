@@ -41,6 +41,11 @@ const Footer = () => {
                     Gamvir Samudra Setu School
                   </a>
                 </li>
+                <li data-aos="fade-up" data-aos-offset="-50" data-aos-delay="100">
+                  <a aria-label="Click to visit website of Bureaucrazy" target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://www.bureaucrazy.co/">
+                    Bureaucrazy.co
+                  </a>
+                </li>
                 <li data-aos="fade-up" data-aos-offset="-50" data-aos-delay="400">
                   <a aria-label="Click to visit my Studio" target="blank" className="text-gray-700 transition hover:text-gray-700/75" href="https://studio.manishmahato.info.np">
                     Studio
