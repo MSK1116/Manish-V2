@@ -42,7 +42,7 @@ const Awards_swiper = () => {
                   <FaMedal className="w-6 h-6" />
                 </div>
                 <h5 className="text-xl mb-1 font-semibold">Kevin Xu Innovation</h5>
-                <p className="mb-4 text-left">Finalist of Kevin Xu Innovation Challenge, an initiative of Rhodes Forum on Technology and Society, Oxford, UK. For bureaucrazy.co </p>
+                <p className="mb-4 text-left">Runner-up of Kevin Xu Innovation Challenge, an initiative of Rhodes Forum on Technology and Society, Oxford, UK. For bureaucrazy.co </p>
               </div>
               <div data-aos="zoom-in-right" className="px-4 py-5 flex-auto rounded-md bg-slate-50 hover:bg-slate-100 cursor-default ">
                 <div className=" p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
