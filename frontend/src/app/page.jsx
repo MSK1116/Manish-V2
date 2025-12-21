@@ -4,11 +4,13 @@ import About from "@/About/About";
 import Award from "@/Award/Award";
 import Project from "@/Project/Project";
 import Contact from "@/contact/Contact";
+import { pixelateImageToBase64 } from "@/lib/pixelate";
 
-const page = () => {
+const page = async () => {
+  const pixelatedOfManish = await pixelateImageToBase64("./public/imageDir/manish_portfolio.jpg");
   return (
     <>
-      <Home_banner />
+      <Home_banner pixelatedOfManish={pixelatedOfManish} />
       <About />
       <Award />
       <Project />
