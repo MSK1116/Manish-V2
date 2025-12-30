@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaLinkedin, FaNodeJs } from "react-icons/fa";
+
 import { FaSquareWhatsapp, FaSquareInstagram, FaFacebook } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
 import { SiMongodb, SiExpress, SiVite, SiTailwindcss } from "react-icons/si";
@@ -68,7 +69,7 @@ const Home_banner = ({ pixelatedOfManish }) => {
                   </h4>
                   <ul className="flex space-x-5">
                     <li>
-                      <SiVite data-aos="fade-right" data-aos-delay="300" className="text-2xl  hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
+                      <FaNodeJs data-aos="fade-right" data-aos-delay="300" className="text-2xl  hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
                     </li>
                     <li>
                       <RiNextjsLine data-aos="fade-right" data-aos-delay="200" className="text-2xl  hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
