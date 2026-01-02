@@ -121,6 +121,21 @@ export default function RootLayout({
          })(window, document, "clarity", "script", "mtc9m2c1sz");`,
           }}
         />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPW8JGJVH5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPW8JGJVH5');
+</script>`,
+          }}
+        />
       </head>
       <body className={`${radioCanadaBig.variable}   antialiased  ${lora.variable} `}>
         <Navbar_Box />
