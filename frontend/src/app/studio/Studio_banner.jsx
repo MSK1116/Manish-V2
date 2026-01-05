@@ -12,7 +12,7 @@ const Studio_banner = ({ pixelImg }) => {
     <>
       <main className={` w-full overflow-hidden md:min-h-screen h-full md:h-full `}>
         <div className="relative h-screen w-full">
-          <Image data-aos="fade-down" blurDataURL={pixelatedImg1} src="/studio/IMG_0360.jpg" alt="a mountain" placeholder="blur" fill className="object-cover object-center" />
+          <Image data-aos="fade-down" blurDataURL={pixelatedImg1} src="/studio/IMG_0360.jpg" alt="a mountain" placeholder="blur" fill className="object-cover bg-fixed  object-center" />
           <h1 data-aos="zoom-in" data-aos-duration="900" data-aos-delay="100" className=" absolute inset-0  flex items-center justify-center bg-transparent text-blue-700 text-8xl font-bold uppercase select-none">
             Studio
           </h1>
