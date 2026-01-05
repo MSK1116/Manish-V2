@@ -70,7 +70,7 @@ export const metadata = {
 };
 
 const page = async () => {
-  const pixelatedImg1 = await pixelateImageToBase64("./public/studio/IMG_5547.jpg");
+  const pixelatedImg1 = await pixelateImageToBase64("./public/studio/IMG_0360.jpg");
   const pixelatedImg2 = await pixelateImageToBase64("./public/studio/ManihsWithCamera.jpg");
   return (
     <>
