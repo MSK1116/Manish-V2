@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IoIosArrowDropright } from "react-icons/io";
@@ -8,9 +8,29 @@ import VerticalMarquee from "./VerticalMarquee";
 
 const Studio_banner = ({ pixelImg }) => {
   const { pixelatedImg1, pixelatedImg2 } = pixelImg;
+  const containerRef = useRef(null);
+  const handleMouseMove = (e) => {
+    const container = containerRef.current;
+    if (!container) return;
+    if (Math.random() > 0.4) return;
+    const sparkle = document.createElement("span");
+
+    const size = Math.random() * 6 + 10;
+    sparkle.style.width = `${size}px`;
+    sparkle.style.height = `${size}px`;
+
+    sparkle.style.left = `${e.clientX}px`;
+    sparkle.style.top = `${e.clientY}px`;
+
+    sparkle.className = "glitter-particle";
+
+    container.appendChild(sparkle);
+
+    setTimeout(() => sparkle.remove(), 1000);
+  };
   return (
     <>
-      <main className={` w-full overflow-hidden md:min-h-screen h-full md:h-full `}>
+      <main ref={containerRef} onMouseMove={handleMouseMove} className={` w-full overflow-hidden md:min-h-screen h-full md:h-full `}>
         <div className="relative h-screen w-full">
           <Image data-aos="fade-down" blurDataURL={pixelatedImg1} src="/studio/IMG_0360.jpg" alt="a mountain" placeholder="blur" fill className="object-cover bg-fixed  object-center" />
           <h1 data-aos="zoom-in" data-aos-duration="900" data-aos-delay="100" className=" absolute inset-0  flex items-center justify-center bg-transparent text-blue-700 text-8xl font-bold uppercase select-none">
@@ -32,7 +52,7 @@ const Studio_banner = ({ pixelImg }) => {
         <span className="h-px flex-1 bg-gradient-to-r from-transparent to-gray-300"></span>
         <span className="h-px flex-1 bg-gradient-to-l from-transparent to-gray-300"></span>
       </span>
-      <section className=" w-full h-full overflow-hidden md:p-8">
+      <section ref={containerRef} onMouseMove={handleMouseMove} className=" w-full h-full overflow-hidden md:p-8">
         <h3 data-aos="fade-down" className=" px-8 text-center text-3xl font-lora font-medium mb-3">
           Exploring the world through quiet moments, earthy textures, and the poetry of light and shadow.
         </h3>
