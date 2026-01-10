@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { FaLinkedin, FaNodeJs } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaNodeJs } from "react-icons/fa";
 
 import { FaSquareWhatsapp, FaSquareInstagram, FaFacebook } from "react-icons/fa6";
 import { IoLogoReact } from "react-icons/io5";
@@ -57,8 +57,8 @@ const Home_banner = ({ pixelatedOfManish }) => {
                       </a>
                     </li>
                     <li>
-                      <a aria-label="click to visit my whatsapp account" target="blank" href="https://wa.me/9779812055778?text=I%20visited%20your%20website%20and%20looking%20to%20get%20connected">
-                        <FaSquareWhatsapp id="whatsapp" data-aos="fade-right" data-aos-delay="50" className="text-2xl cursor-pointer hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
+                      <a aria-label="click to visit my Github account" target="blank" href="https://github.com/MSK1116">
+                        <FaGithub id="github" data-aos="fade-right" data-aos-delay="50" className="text-2xl cursor-pointer hover:text-black transition-all duration-300 hover:scale-105 rounded-full" />
                       </a>
                     </li>
                   </ul>
