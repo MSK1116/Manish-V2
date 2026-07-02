@@ -8,8 +8,12 @@ import mailer from "./route/mail.route.js";
 import path from "path";
 import favicon from "serve-favicon";
 import { fileURLToPath } from "url";
+import dns from "dns";
 
 const app = express();
+if (process.env.NODE_ENV !== "production") {
+  dns.setServers(["1.1.1.1", "8.8.8.8"]);
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -21,7 +25,7 @@ app.use(
     allowedHeaders: ["Content-Type"],
     credentials: true,
   }),
-  favicon(path.join(__dirname, "public", "JPG_manish_circle.png"))
+  favicon(path.join(__dirname, "public", "JPG_manish_circle.png")),
 );
 app.options("*", cors());
 

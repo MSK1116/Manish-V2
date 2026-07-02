@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
 import { EasterEggProvider } from "@/components/EasterEggContext";
 import Easteregg from "@/components/Easteregg";
+import { ConsentManager } from "../components/consent-manager";
 
 const radioCanadaBig = Radio_Canada_Big({
   subsets: ["latin"],
@@ -110,38 +111,17 @@ export default function RootLayout({
             }),
           }}
         />
-        <Script
-          id="clarity-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: ` (function(c,l,a,r,i,t,y){
-         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-         })(window, document, "clarity", "script", "mtc9m2c1sz");`,
-          }}
-        />
-
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-QPW8JGJVH5" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
-            gtag('js', new Date());
-
-            gtag('config', 'G-QPW8JGJVH5');
-          `}
-        </Script>
       </head>
       <body className={`${radioCanadaBig.variable}   antialiased  ${lora.variable} `}>
-        <Navbar_Box />
-        {children}
-        <Footer />
-        <AosInitializer />
-        <EasterEggProvider>
-          <Easteregg />
-        </EasterEggProvider>
+        <ConsentManager>
+          <Navbar_Box />
+          {children}
+          <Footer />
+          <AosInitializer />
+          <EasterEggProvider>
+            <Easteregg />
+          </EasterEggProvider>
+        </ConsentManager>
       </body>
     </html>
   );

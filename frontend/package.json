@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap",
     "lint": "next lint"
   },
   "dependencies": {
+    "@c15t/dev-tools": "^2.1.0",
+    "@c15t/nextjs": "^2.1.0",
+    "@c15t/scripts": "^2.1.0",
     "@react-spring/parallax": "^10.0.1",
     "aos": "^2.3.4",
     "axios": "^1.9.0",
