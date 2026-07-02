@@ -7,7 +7,7 @@ import { ConsentDialog, ConsentWidget } from "@c15t/nextjs";
  * Consent dialog using compound components.
  * @see https://c15t.com/docs/frameworks/nextjs/components/consent-dialog
  */
-export default function () {
+export default function CustomConsentDialog() {
   const [openItem, setOpenItem] = useState("");
 
   return (

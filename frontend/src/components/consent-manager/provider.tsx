@@ -5,11 +5,11 @@ import { ConsentManagerProvider } from "@c15t/nextjs";
 
 // import { DevTools } from "@c15t/dev-tools/react";
 import ConsentBanner from "./consent-banner";
-import ConsentDialog from "./consent-dialog";
 import { theme } from "./theme";
 
 import { gtag } from "@c15t/scripts/google-tag";
 import { clarity } from "@c15t/scripts/microsoft-clarity";
+import CustomConsentDialog from "./consent-dialog";
 
 interface Props {
   children: ReactNode;
@@ -29,7 +29,7 @@ export default function ConsentManagerClient({ children }: Props) {
         // overrides: { country: "DE" },
       }}>
       <ConsentBanner />
-      <ConsentDialog />
+      <CustomConsentDialog />
       {/* <DevTools disabled={process.env.NODE_ENV === "production"} /> */}
       {children}
     </ConsentManagerProvider>
