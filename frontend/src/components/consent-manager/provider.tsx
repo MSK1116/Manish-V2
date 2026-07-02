@@ -25,9 +25,8 @@ export default function ConsentManagerClient({ children }: Props) {
       options={{
         mode: "offline",
         theme,
-        // Add your scripts here:
+
         scripts: [gtag({ id: "G-71C9M264YW", category: "measurement" }), clarity({ id: "nvxxxeqn8t" })],
-        overrides: { country: "DE" },
       }}>
       <ConsentBanner />
       <ConsentDialog />
