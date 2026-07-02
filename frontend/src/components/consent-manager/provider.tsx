@@ -26,6 +26,7 @@ export default function ConsentManagerClient({ children }: Props) {
         mode: "offline",
         theme,
         scripts: [gtag({ id: "G-QPW8JGJVH5", category: "measurement" }), clarity({ id: "mtc9m2c1sz" })],
+        // overrides: { country: "DE" },
       }}>
       <ConsentBanner />
       <ConsentDialog />
