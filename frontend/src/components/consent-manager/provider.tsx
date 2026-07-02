@@ -25,7 +25,6 @@ export default function ConsentManagerClient({ children }: Props) {
       options={{
         mode: "offline",
         theme,
-
         scripts: [gtag({ id: "G-71C9M264YW", category: "measurement" }), clarity({ id: "nvxxxeqn8t" })],
       }}>
       <ConsentBanner />

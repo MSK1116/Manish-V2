@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import Script from "next/script";
 import { EasterEggProvider } from "@/components/EasterEggContext";
 import Easteregg from "@/components/Easteregg";
+
 import { ConsentManager } from "../components/consent-manager";
 
 const radioCanadaBig = Radio_Canada_Big({
