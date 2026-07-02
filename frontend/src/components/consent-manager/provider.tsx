@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import { ConsentManagerProvider } from "@c15t/nextjs";
 
-import { DevTools } from "@c15t/dev-tools/react";
+// import { DevTools } from "@c15t/dev-tools/react";
 import ConsentBanner from "./consent-banner";
 import ConsentDialog from "./consent-dialog";
 import { theme } from "./theme";
@@ -25,11 +25,11 @@ export default function ConsentManagerClient({ children }: Props) {
       options={{
         mode: "offline",
         theme,
-        scripts: [gtag({ id: "G-71C9M264YW", category: "measurement" }), clarity({ id: "nvxxxeqn8t" })],
+        scripts: [gtag({ id: "G-QPW8JGJVH5", category: "measurement" }), clarity({ id: "mtc9m2c1sz" })],
       }}>
       <ConsentBanner />
       <ConsentDialog />
-      <DevTools disabled={process.env.NODE_ENV === "production"} />
+      {/* <DevTools disabled={process.env.NODE_ENV === "production"} /> */}
       {children}
     </ConsentManagerProvider>
   );
